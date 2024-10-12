@@ -1,1 +1,0 @@
-#mas dilis 2:07 satia ra fasanauri xinkali mezineba
