@@ -1,0 +1,1 @@
+# kdois wera shecoma gamosworeba asw xdeba yvela kodis sheqmna radgan kodis codna 100% codna sheuzlebelia amitom xdeba shecmebi
