@@ -1,0 +1,5 @@
+print("kata = -1  tagvi udris 1")
+kata=str(input("enter_number1: "))
+tagvi=str(input("enter_numner2: "))
+print(kata == kata)
+print(tagvi == tagvi)
