@@ -4,7 +4,7 @@
 
 
 
-name1 = input("sheni saxeli: ")
+name1 = input("sheni saxeli sheiyvane: ")
 
 if name1 == "aleqsandre":
     print("shen chemnairi saxeli maq")
