@@ -5,7 +5,7 @@
 
 age = int(input("enter_ur_age"))
 
-if age == age > 17:
+if age >= 17:
     print("she shegizlia aigo martvis mowmobis ageba")
 else:
     print("shen ar shegizlia aigo martvis mowmoba")
