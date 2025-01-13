@@ -1,2 +1,5 @@
 number = int(input("enter ur number"))
-while number
+i = 1
+while i <= number:
+    print(i)
+    i += 1
