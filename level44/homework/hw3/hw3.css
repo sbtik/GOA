@@ -1,0 +1,19 @@
+body{
+    background-color: black;
+    text-align: center;
+}
+h1{
+    color: red;
+}
+#alfsinfo{
+    color: chartreuse;
+    font-size: 25px;
+}
+#alfa{
+    width: 400px;
+    height: 300px;
+}
+#facebook{
+    font-size: 25px;
+    color: rgb(0, 17, 255);
+}

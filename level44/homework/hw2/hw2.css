@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(26, 31, 99);
+}
+#sigma{
+    height: 300px;
+    width: 400px;
+}
+#nga{
+    color: rgb(2, 255, 2);
+    font-size: 25px;
+}
+#h1{
+    color: rgb(255, 0, 0);
+}
+#p1{
+    color: rgb(36, 0, 66);
+    font-size: 25px;
+}
+#img2{
+    height: 300px;
+    width: 500px;
+}
+#p2{
+    font-size: 25px;
+    color: cornflowerblue;
+}
+#h2{
+    color: rgb(255, 0, 0);
+}
+#h3{
+    color: red;
+}
+#meraba{
+    height: 400px;
+    width: 400px;
+}
+#p3{
+    color: blueviolet;
+    font-size: 25px;
+}
+#button1{
+    color: red;
+    font-size: 25px;
+}
