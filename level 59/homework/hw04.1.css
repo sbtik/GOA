@@ -1,0 +1,177 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f2ef;
+    color: #0a66c2; 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: white;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 34px;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+    padding: 8px 12px;
+}
+
+nav a.sign1 {
+    background-color: transparent;
+    color: #0a66c2;
+    border: 1px solid #0a66c2;
+    border-radius: 25px;
+    padding: 8px 16px;
+}
+
+main.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.login-form {
+    padding-right: 40px;
+}
+
+.login-form h1 {
+    font-size: 2.5em;
+    color: #0a66c2;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.password1 {
+    margin-bottom: 20px;
+}
+
+.password1 a {
+    text-decoration: none;
+    color: #0a66c2;
+}
+
+.sign {
+    background-color: #0a66c2;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 24px;
+    font-size: 1.1em;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.or {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+
+
+.or span {
+    padding: 0 10px;
+}
+
+.google {
+    background-color: white;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 12px 24px;
+    font-size: 1.1em;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.google img {
+    height: 20px;
+    margin-right: 10px;
+}
+
+.linked1 {
+    text-align: center;
+}
+
+.linked1 a {
+    color: #0a66c2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.photo {
+    flex: 1;
+    text-align: center;
+}
+
+.photo img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: white;
+    padding: 20px 30px;
+    text-align: center;
+    color: #666;
+    font-size: 0.9em;
+    margin-top: auto; 
+}
+
+footer a {
+    color: #0a66c2;
+    text-decoration: none;
+}

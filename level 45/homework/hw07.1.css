@@ -1,0 +1,16 @@
+.div{
+    padding: 10px;
+    margin: 20px;
+    border: solid 2px;
+}
+.div2{
+    padding: 20px;
+    margin: 30px;
+    border: double 5px;
+}
+
+.div3{
+    padding: 30px;
+    margin: 40px;
+    border: dotted 10px;
+}

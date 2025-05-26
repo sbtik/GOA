@@ -1,0 +1,27 @@
+h2{
+    color:red;
+    text-align: center;
+    font-size: 30px;
+    background-color: yellow;
+    border: 2px solid blue;
+    border-radius: 10px;
+}
+h1{
+    color: blue;
+    text-align: center;
+    font-size: 40px;
+    background-color: green;
+    border: 10px solid red;
+    border-radius: 15px;
+}
+h3 li{
+    color: hotpink;
+    text-align: left;
+    font-size: 20px;
+    background-color: chocolate;
+    border: 2px solid brown;
+    border-radius: 5px;
+}
+
+
+

@@ -1,0 +1,67 @@
+.Hello{
+    position: absolute;
+    right: 600px;
+    text-decoration: dotted underline green;
+}
+.World{
+    position: absolute;
+    left: 700px;
+    top: 200px;
+    text-decoration: line-through;
+}
+
+.Goal{
+    position: absolute;
+    left: 700px;
+    top: 400px;
+    text-decoration: underline;
+}
+
+.Best{
+    position: absolute;
+    left: 700px;
+    top: 700px;
+    text-decoration: overline gray;
+    color: gray;
+}
+
+.Oriented{
+    position: absolute;
+    right: 600px;
+    text-decoration: line-through dotted green;
+    top: 450px;
+}
+.the{
+    position: absolute;
+    color: green;
+    right: 600px;
+    text-decoration: overline green;
+    top: 620px;
+}
+
+.one{
+    position: absolute;
+    right: 600px;
+    text-decoration: underline dotted green;
+    top: 800px;
+    
+}
+
+.I {
+    position: absolute;
+    text-decoration: double overline red;
+    top: 350px;
+}
+
+.Academy{
+    position: absolute;
+    text-decoration: line-through;
+    top: 600px;
+
+}
+
+.is{
+    position: absolute;
+    text-decoration: overline;
+    top: 700px;
+}

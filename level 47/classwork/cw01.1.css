@@ -1,0 +1,88 @@
+.border {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    border: 5px solid black;
+    width: 55%;
+    margin: 50px;
+}
+
+
+.cube {
+    background-color: red;
+    color: white;
+    font-size: 25px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+}
+.GH {
+    display: flex;
+    flex-direction: column-reverse;  
+    align-items: center;  
+    margin: 50px;
+    padding: 25px;
+    border: 5px solid black;
+    width: 210px;  
+}
+
+
+.first, .second, .third {
+    background-color: red;
+    color: white;
+    font-size: 25px;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.HG {
+    display: flex;
+    flex-direction: column-reverse; 
+    align-items: center;
+    margin: 40px ;
+    padding: 25px;
+    border: 5px solid black;
+    width: 210px;
+}   
+
+.first1, .second2, .third3 {
+    background-color: red;
+    color: white;
+    font-size: 25px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    margin-bottom: 10px; 
+}
+.G {
+    display: flex;
+    justify-content: space-around;  
+    padding: 20px;
+    border: 5px solid black;
+    width: 400px; 
+    margin: 50px;  
+}
+
+
+.I, .II, .III{
+    background-color: red;
+    color: white;
+    font-size: 25px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    height: 100px;
+    display: flex;
+}

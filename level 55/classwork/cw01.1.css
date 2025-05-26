@@ -1,0 +1,9 @@
+div{
+    border: solid 5px;
+    width: 500px;
+    height: 500px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA2oASENe7GdCli1KnAl6cnDnuD6lGT60txQ&s');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 500px;
+}

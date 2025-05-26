@@ -1,0 +1,1 @@
+#vuyure da gavige tu rogor unda shevucvalo backgroundi bodys an raime elements

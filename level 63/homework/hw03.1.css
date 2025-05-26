@@ -1,0 +1,12 @@
+h1{
+    text-decoration: underline yellow;
+    color: red;
+}
+h2{
+    text-decoration: line-through purple;
+    color: blue;
+}
+h3{
+    color: firebrick;
+    text-decoration: overline green;
+}

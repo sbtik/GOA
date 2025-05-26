@@ -1,0 +1,221 @@
+.navigation{
+    border: 2px solid  ;
+    background-color: orange;
+    position: fixed;
+    border: solid 7px black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+body{
+    height: 350vh;
+    background-color: chocolate;
+    position: relative;
+}
+.navigation:hover{
+    transition: 2s;
+    width: 180px;
+    height: 400px;
+}
+
+.products{
+   display: flex;
+   justify-content: center; 
+   
+}
+.loading{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 1px; 
+    
+
+}
+.navigation button{
+    margin: 5px 0;
+    width: 100%;
+    text-align: center;
+    
+}
+    
+.title{
+    border:solid orange;
+    background-color: orange;
+    right: 2px;
+    font-size: 20px;
+}
+.title:hover{
+    color: blue;
+    font-size: 27px;
+    transition: 1s ;
+
+}
+.about{
+    border:solid orange;
+    background-color: orange;
+    font-size: 20px;
+}
+.about:hover{
+    color: blue;
+    font-size: 35px;
+    transition: 1s ;
+}
+.sign{
+    border:solid orange;
+    background-color: orange;
+    font-size: 20px;
+}
+
+.sign:hover{
+    color: blue;
+    font-size: 35px;
+    transition: 1s ;
+    
+}
+.contact{
+    border:solid orange;
+    background-color: orange;
+    font-size: 20px;
+}
+
+
+.contact:hover{
+    transition: 1s ;
+    color: blue;
+    font-size: 35px;
+
+}
+.terms{
+    border:solid orange;
+    background-color: orange;
+    font-size: 20px;
+}
+
+.terms:hover{
+    color: blue;
+    font-size: 35px;
+    transition: 1s ;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: orange;
+    padding: 20px;
+  }
+
+.product {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 30px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+.product:hover{
+    transition: 1s;
+    width: 350px;
+
+}
+
+.price {
+    color: #ff6600;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 14px;
+}
+
+.discount {
+    background-color: orange;
+    color: white;
+    padding: 3px 6px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.cart {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.cart:hover {
+    background-color: darkorange;
+}
+
+input[type=number] {
+    width: 50px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.didi{
+    display: flex;
+    gap: 30px;
+    
+}
+.didi1{
+    display: flex;
+    gap: 30px;
+}
+.didi2{
+    display: flex;
+    gap: 30px;
+}
+.didi3{
+    display: flex;
+    gap: 30px;
+
+}
+.didi4{
+    display: flex;
+    gap: 30px;
+}
+
+.me{
+    color: black;
+    text-decoration: none;
+    background-color: orange;
+    border: solid orange
+}
+
+.me:hover{
+    color: #ff6600;
+    font-size: 20px;
+    transition: 2s;
+    background-color: orange;
+    border: solid orange;
+}
+.gvanca{
+    color: black;
+    text-decoration: none;
+    background-color: orange;
+    border: solid orange;
+}
+
+.gvanca:hover{
+    color: #ff6600;
+    font-size: 20px;
+    transition: 2s;
+    background-color: orange;
+}

@@ -1,0 +1,48 @@
+header{
+    position: fixed;
+    display:flex;
+    background-color: red ;
+    height: 30px;
+    width: 100px;
+    justify-content: center;
+    right: 100px;
+
+}
+body{
+    height: 200vh;
+    background-color: green;
+}
+
+div{
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Lionel-Messi-Argentina-2022-FIFA-World-Cup_sharpness.jpg/250px-Lionel-Messi-Argentina-2022-FIFA-World-Cup_sharpness.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    border: solid blueviolet 5px;
+    position: relative;
+    
+    
+    
+    
+    
+}
+h1{
+    align-items: center;
+    justify-content: center;
+    bottom: 300px;
+}
+
+.block{
+    justify-content: left;
+    
+}
+h2{
+    display: flex;
+    position: absolute;
+    top: 5px;
+    right: 25px;
+    
+}

@@ -1,0 +1,34 @@
+body{
+    background-color: black;
+    
+    
+}
+h1{
+    color: darkcyan;
+    display: flex;
+    justify-content: center;
+
+}
+
+.bar{
+    border: solid 5px;
+    border-radius:10px;
+    background-color: blue;
+    width: 100%;
+    height: 50px;
+}
+
+.filler{
+    width: 50%;
+    height: 50px;
+    background-color: chartreuse;
+    animation: fillprogressbar 2s forwards;
+}
+@keyframes fillprogressbar {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+p{
+    color: azure;
+}

@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+  
+.apple {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-image: url("./hw04.2.png");
+}
+  
+  
+
+  
+.bar {
+    background-color: #333;
+    width: 200px;
+    height: 5px;
+    border-radius: 2.5px;
+    overflow: hidden;
+}
+  
+.progress-bar {
+    background-color: white;
+    height: 100%;
+    width: 40%;
+    border-radius: 2.5px;
+    animation: ProgressBar 2s linear infinite;
+}
+  
+@keyframes ProgressBar {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(250%);
+    }
+}

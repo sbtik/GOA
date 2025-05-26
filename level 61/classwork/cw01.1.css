@@ -1,0 +1,56 @@
+
+
+
+
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+#towers {
+  position: absolute;
+  height: auto;
+  max-height: 100%;
+  right: 15%;
+  max-width: 20%;
+}
+
+
+
+
+
+#plane {
+  position: absolute;
+  width: auto;
+  max-width: 15%;
+  animation: fly-by 5s linear infinite; 
+}
+
+@keyframes fly-by {
+  0% {
+    left: -200px;
+    top: 30%; 
+    transform: rotate(10deg); 
+  }
+
+  25% {
+    left: 25%;
+    top: 20%; 
+    transform: rotate(0deg); 
+  }
+
+  50% {
+    left: 50%;
+    top: 20%; 
+    transform: rotate(-10deg); 
+  }
+
+  75% {
+    left: 75%;
+    top: 30%; 
+    transform: rotate(0deg);
+  }
+  
+}

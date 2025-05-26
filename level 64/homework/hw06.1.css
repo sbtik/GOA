@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+h5{
+    font-weight: 700;
+    text-decoration: line-through overline underline red;
+    font-family: "Share Tech", sans-serif;
+}

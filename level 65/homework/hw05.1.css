@@ -1,0 +1,32 @@
+.div1{
+    width:600px;
+    height:400px;
+    background-color:red;
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    padding:10px;
+    justify-content:flex-start;
+    align-items:flex-start;
+}
+.div2{
+    width:100px;
+    height:100px;
+    background-color:blue;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+}
+.div3{
+    background-color:green;
+    width:auto;
+    height:auto;
+    flex-direction:column;
+    padding:10px;
+    gap:5px;
+}
+.div3 p{
+    color:purple;
+    margin:0;
+}

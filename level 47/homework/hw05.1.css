@@ -1,0 +1,53 @@
+body  { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    margin: 0;
+    background-color: #ffe680;
+    padding: 40px;
+    border-radius: 10px;
+    position: relative;
+}
+.learning{
+
+    padding: 2%;
+    border: solid hsl(47, 88%, 63%) ;
+    border-color: hsl(47, 88%, 63%);
+    border-radius: 5px;
+    background-color: hsl(47, 88%, 63%);
+    margin-right: 220px;
+
+}
+
+.grey{
+    color:hsl(0, 0%, 42%)
+}
+
+.img{
+    width: 100%;
+    display: block;
+}
+.section{
+    background-color: white;
+    border: solid 2px black;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 4px 8px black;
+}
+
+.black_words{
+    color: black;
+}
+
+.profile{
+    border-radius: 50%;
+    display: flex;
+    justify-content: left;
+
+}
+
+
+

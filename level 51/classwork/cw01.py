@@ -1,0 +1,1 @@
+#ar gvaq vaketebdit codewars

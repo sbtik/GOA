@@ -1,0 +1,16 @@
+.first{
+    height: 100px;
+    width: 100px;
+    background-color: #ff0000;
+    right: 150px;
+    bottom: 200px;
+}
+
+.second{
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+    right: 100px;
+    bottom: 50px;
+    z-index:  2; /* ეს აძლევს დივს საშუალებას როცა ერთმანეთს ემთვევა ის დაიპრყროს და მისი ნაწილი გამოჩნდეს*/
+}

@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #231a2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 140vh;
+}
+
+.mze{
+    position: relative;
+    top: 0;
+    animation-name: bzriali;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    width: 70%;
+    height: 70%;
+    
+    border-radius: 50px;
+}
+
+.mze-sxivebi{
+    position: relative;
+    box-shadow: 0px -20px 400px yellow;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@keyframes bzriali {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.orbita1{
+    border: 3px solid rgba(255,255,255,0.515);
+    border-radius: 50%;
+    padding: 90px;
+    position: absolute;
+    animation-name: bzriali;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+
+.planeta1{
+    width:30px ;
+    height: 30px;
+    background-color: azure;
+    position: absolute;
+    top: -15px;
+    border-radius: 50%;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orbita2{
+    border: 3px solid rgba(255,255,255,0.515);
+    border-radius: 50%;
+    padding: 150px;
+    position: absolute;
+    animation-name: bzriali;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+
+.planeta2{
+    width:30px ;
+    height: 30px;
+    background-color: orange;
+    position: absolute;
+    top: -13px;
+    border-radius: 50%;
+}
+
+.orbita3{
+    border: 3px solid rgba(255,255,255,0.515);
+    border-radius: 50%;
+    padding: 200px;
+    position: absolute;
+    animation-name: bzriali;
+    animation-duration: 3.7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+
+.planeta3{
+    width:30px ;
+    height: 30px;
+    background-color: green;
+    position: absolute;
+    top: -15px;
+    border-radius: 50%;
+}
+
+.orbita4{
+    border: 3px solid rgba(255,255,255,0.515);
+    border-radius: 50%;
+    padding: 250px;
+    position: absolute;
+    animation-name: bzriali;
+    animation-duration: 4.8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+
+.planeta4{
+    width:30px ;
+    height: 30px;
+    background-color: darkorange;
+    position: absolute;
+    top: -18px;
+    border-radius: 50%;
+}
+
+.orbita5{
+    border: 3px solid rgba(255,255,255,0.515);
+    border-radius: 50%;
+    padding: 300px;
+    position: absolute;
+    animation-name: bzriali;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+
+.planeta5{
+    width:40px ;
+    height: 40px;
+    background-color: indigo;
+    position: absolute;
+    top: -21px;
+    border-radius: 50%;
+}
+
+.orbita6{
+    border: 3px solid rgba(255,255,255,0.515);
+    border-radius: 50%;
+    padding: 350px;
+    position: absolute;
+    animation-name: bzriali;
+    animation-duration: 7.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+
+.planeta6{
+    width:40px ;
+    height: 40px;
+    background-color: yellow;
+    position: absolute;
+    top: -24px;
+    border-radius: 50%;
+}
+
+.orbita7{
+    border: 3px solid rgba(255,255,255,0.515);
+    border-radius: 50%;
+    padding: 410px;
+    position: absolute;
+    animation-name: bzriali;
+    animation-duration: 50s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+
+.planeta7{
+    width:70px ;
+    height: 70px;
+    background-color: grey;
+    position: absolute;
+    top: -27px;
+    border-radius: 50%;
+}
+.orbita8{
+    border: 3px solid rgba(255,255,255,0.515);
+    border-radius: 50%;
+    padding: 460px;
+    position: absolute;
+    animation-name: bzriali;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+
+.planeta8{
+    width:40px ;
+    height: 40px;
+    background-color: darkred;
+    position: absolute;
+    top: -30px;
+    border-radius: 50%;
+}
+
+.orbita9{
+    border: 3px solid rgba(255,255,255,0.515);
+    border-radius: 50%;
+    padding: 510px;
+    position: absolute;
+    animation-name: bzriali;
+    animation-duration: 100s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+
+.planeta9{
+    width:50px ;
+    height: 50px;
+    background-color: darkblue;
+    position: absolute;
+    top: -28px;
+    border-radius: 50%;
+}

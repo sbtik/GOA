@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="data:image/jpeg;base64,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">
+    <p>The Toyota Supra (Japanese: トヨタ・スープラ, Hepburn: Toyota Sūpura) is a sports car and grand tourer manufactured by the Toyota Motor Corporation beginning in 1978. The name "supra" is derived from the Latin prefix, meaning "above", "to surpass" or "go beyond".[3]
+
+        The initial four generations of the Supra were produced from 1978 to 2002. The fifth generation has been produced since March 2019 and went on sale in May 2019.[4] The styling of the original Supra was derived from the Toyota Celica, but it was longer.[5] Starting in mid-1986, the A70 Supra became a separate model from the Celica. In turn, Toyota also stopped using the prefix Celica and named the car Supra.[6] Owing to the similarity and past of the Celica's name, it is frequently mistaken for the Supra, and vice versa. The first, second and third generations of the Supra were assembled at the Tahara plant in Tahara, Aichi, while the fourth generation was assembled at the Motomachi plant in Toyota City. The 5th generation of the Supra is assembled alongside the G29 BMW Z4 in Graz, Austria by Magna Steyr.
+        
+        The Supra traces much of its roots back to the 2000GT owing to an inline-6 layout. The first three generations were offered with a direct descendant to the Crown's and 2000GT's M engine. Interior aspects were also similar, as was the chassis code "A". Along with this name, Toyota also included its own logo for the Supra. It was derived from the original Celica logo, being blue instead of orange. This logo was used until January 1986, when the A70 Supra was introduced. The new logo was similar in size, with orange writing on a red background, but without the dragon design. That logo, in turn, was on Supras until 1991 when Toyota switched to its current oval company logo. The dragon logo was a Celica logo regardless of what colour it was. It appeared on the first two generations of the Supra because they were officially Toyota Celicas. The dragon logo was used for the Celica line until it was also discontinued.[citation needed]
+        
+        In 1998, Toyota ceased sales of the fourth-generation Supra in the United States.[6] Production of the fourth-generation Supra for worldwide markets ended in 2002. In January 2019, the fifth-generation Supra, which was co-developed with the G29 BMW Z4, was introduced.[7]
+        
+        First generation (A40/A50; 1978)
+        First generation
+        
+        Toyota Celica Supra (MA47)
+        Overview
+        Model code	
+        A40A50
+        Also called	
+        Toyota Celica XX (Japan)
+        Toyota Celica Supra
+        Production	April 1978 – June 1981[1]
+        Model years	1979–1981
+        Assembly	Japan: Tahara, Aichi (Tahara plant)[8]
+        Body and chassis
+        Related	
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/1997_Castrol_Tom%27s_Supra_01.jpg/1024px-1997_Castrol_Tom%27s_Supra_01.jpg">
+        Toyota Carina (A40)
+        Toyota Celica (A40)
+        Powertrain
+        Engine	
+        1988 cc M-EU I6
+        2563 cc 4M-E I6
+        2759 cc 5M-E I6
+        Transmission	
+        5-speed W50 manual
+        4-speed A40D automatic
+        4-speed A43D automatic
+        Dimensions
+        Wheelbase	2,630 mm (103.5 in)
+        Length	4,600–4,615 mm (181.1–181.7 in)
+        Width	1,650 mm (65.0 in)
+        Height	1,290–1,310 mm (50.8–51.6 in)
+        Curb weight	1,150–1,270 kg (2,535–2,800 lb)
+        The first generation of the Supra was based largely upon the Toyota Celica liftback, but was longer by 129.5 mm (5.10 in). The doors and rear section were shared with the Celica but the front panels were elongated to accommodate the Inline-6 instead of the Celica's 4-cylinder engine. Toyota created the Celica Supra after receiving requests from North American dealerships to offer a competitor to the very popular Datsun 280Z.[9] The Celica XX (in Japanese) served as the basis of the Toyota CAL-1 which was introduced at the 1977 Tokyo Motor Show and the Celica XX was introduced later in 1978.[9] The Celica XX followed a new product offering Toyota had introduced, offering personal luxury cars at their existing dealerships. The Celica XX was the top-level product alongside the Celica at Japanese dealership sales channels called Toyota Corolla Store. The Celica XX offered the same comforts of the Chaser hardtop coupe, Mark II hardtop coupe, and the Crown hardtop coupe.
+        
+        Celica XX
+        
+        
+        1979 Toyota Celica XX 2000G (MA45)
+        The Celica XX (pronounced "double X"[10]) is the Japanese market name of the first generation Celica Supra. It was available with two straight-six engines and five trim packages, beginning with the 2600G, 2600S, 2000G, 2000S and the entry-level 2000L.[9] Six exterior body colours were offered, while cloth upholstery patterns were specific to the trim package in burgundy, brown or dark blue. Leather was offered in brown and only on the "G" trim package. Aluminium alloy wheels were only offered on the "G" trim package. Power windows with driver-side express down, cruise control, power steering, AM/FM Stereo with a separate cassette player, and rear split folding seats were all standard. A parking brake handle was now located in the centre console.[9]
+        
+        Wipers were two-speed with an intermittent wipe and a rear wiper with electric defrost was included.[citation needed]
+        
+        In 1981, the Celica XX introduced the world's first navigation computer.[11]
+        
+        1978
+        The Supra was offered with a 125 PS (92 kW; 123 hp) 2.0 L 12-valve SOHC inline-six engine (M-EU, chassis code MA45) or the 82 kW (110 hp; 111 PS) 2.6-litre 12-valve SOHC inline-six engine (4M-E, chassis code MA46). The Japanese model was also available with the smaller 2.0 L engine, so buyers choose which yearly tax they were willing to pay according to vehicle size and engine displacement regulations. Both engines were equipped with electronic fuel injection.[6][12] The installation of the larger engine did obligate Japanese buyers to pay a higher annual road tax, making owning the car more expensive than the smaller Celica.
+        
+        The Supra was first exported outside Japan in January 1979.[13] The federalized model was originally equipped with a 110 hp (82 kW; 112 PS) 2.6-litre 12-valve SOHC inline-6 engine.
+        
+        Transmission options for the model were either a 5-speed manual (W50) or an optional 4-speed automatic transmission (A40D). Both transmissions featured an overdrive gear. The top gear in the 5-speed was its overdrive gear whereas the automatic transmission featured an overdrive gear that would engage at speeds over 56 km/h (35 mph). The drivetrain for the Supra retained the T series solid rear axle configuration of the Celica in the Japanese MA45 version and a larger F series (and optional Limited Slip Differential) in the MA46 and MA47. The car also came standard with 4-wheel disc brakes and featured a four-link rear suspension with coil springs, lateral track bar, and stabilizer bar. The front suspension consisted of MacPherson struts and a stabilizer bar.
+        
+        The interior of the Supra had optional power windows and power locks as part of the convenience package. The convenience package also included cruise control and special door trim with door pull straps with an optional sunroof. As for standard features, in the centre console there was an extendable map light and a flip-top armrest, which provided storage. Some other features were the tilt steering wheel, deep zippered pockets on the backs of the front seats, and a tonneau cover under the liftback. The dashboard also contained a state of the art AM/FM/MPX 4-speaker stereo radio, analog clock, and tachometer as part of the instrument panel.
+        
+        1979
+        The mid-1979 changes for the 1980 model year US model were mostly cosmetic. The interior received a redesigned centre console and a digital quartz clock. On the exterior were redesigned side view mirrors and 14x51⁄2 inch aluminium wheels were standard (the previous year had steel wheels with plastic wheel covers as standard and the aluminium wheels were optional). In addition, body molded mudflaps became available. On cars finished in copper metallic and white, the mudflaps were painted the body colour while the mudflaps were left black on all other colours. On the rear of the mudflaps, the word "Celica" was painted in white lettering.[14]
+        
+        The official Supra site[6] also notes that there was an addition of optional leather-trimmed seating and automatic climate-control.
+        
+        1980
+        
+        1981 Supra with Sports Performance Package (MA47, US)
+        In August 1980 (for the 1981 model year), the Supra received an upgrade in displacement with the 2.8-litre 5M-E engine shared with the Crown (S110). It was still a 12-valve SOHC engine, but had a power output of 116 hp (87 kW; 118 PS) and 145 lb⋅ft (197 N⋅m) of torque. The car's automatic transmission was changed to the revised Toyota A43D and it gained a revised final drive gearing. Because of the change in engine and transmission a new chassis code of MA47 was given to the 1981 model. Performance figures for this model include a 0–60 mph (97 km/h) acceleration time of 10.24 seconds and a 1/4-mile time of 17.5 seconds at a speed of 77.7 mph (125 km/h).[15]
+        
+        Also in 1980 (for the 1981 model year), a new Sports Performance Package became an option, which included sport suspension, raised white letter tyres, and front and rear spoilers. This also marked the last year that an 8-track tape player was offered in any Supra.[6][14]
+        
+        Powertrain
+        Code	Year	Engine	Power	Torque	Transmission	Market
+        MA45	Apr 1978 – Aug 1980	1,988 cc (2.0 L; 121.3 cu in) M-EU I6	125 PS (92 kW; 123 hp)	136 lb⋅ft (184 N⋅m)	5-speed W50 manual
+        4-speed A40D automatic	Japan
+        MA55	Aug 1980 – Jul 1981	Japan
+        MA46	Apr 1978 – Aug 1980	2,563 cc (2.6 L; 156.4 cu in) 4M-E I6	140 PS (103 kW; 138 hp)
+        110 hp (82 kW; 112 PS)	136 lb⋅ft (184 N⋅m)	Japan
+        Jan 1979 – Aug 1980	North America
+        MA47	Aug 1980 – Jul 1981	2,759 cc (2.8 L; 168.4 cu in) 5M-E I6	116 hp (87 kW; 118 PS)	145 lb⋅ft (197 N⋅m)	5-speed W50 manual
+        4-speed A43D automatic	world
+        MA56	Japan
+        
+        
+        Second generation (A60; 1981)
+        Second generation
+        
+        Toyota Celica Supra (A60)
+        Overview
+        Model code	A60
+        Also called	
+        Toyota Celica XX (Japan)
+        Toyota Celica Supra
+        Production	July 1981 – December 1985[16]
+        Model years	1982–1986
+        Assembly	Japan: Tahara, Aichi (Tahara plant)[8]
+        Body and chassis
+        Related	
+        Toyota Carina (A60)
+        Toyota Celica (A60)
+        Toyota Soarer (Z10)
+        Powertrain
+        Engine	
+        1988 cc 1G-EU I6
+        1988 cc 1G-GEU DOHC 24v I6
+        1988 cc M-TE/TEU turbo I6
+        2759 cc 5M-E I6
+        2759 cc 5M-GE/GEU DOHC I6
+        Transmission	
+        5-speed W55 manual
+        5-speed W57 manual
+        5-speed W58 manual
+        4-speed A43DL automatic
+        4-speed A43DE automatic
+        Dimensions
+        Wheelbase	2,614 mm (102.9 in)
+        Length	4,661 mm (183.5 in)
+        Width	
+        1,695 mm (66.7 in)
+        1,720 mm (67.7 in) (flares)
+        Height	1,321 mm (52.0 in)
+        Curb weight	1,361 kg (3,000 lb)
+        In mid-1981, Toyota completely redesigned the Celica Supra as well as the entire Celica lineup for the 1982 model year. In Japan, the Celica XX name continued, and the Celica Supra name continued internationally. Still based on the Celica platform, there were several key differences, most notably the design of the front end and fully retractable pop-up headlights. Other differences were the inline-six rather than four-cylinder engine, as well as an increase in length and wheelbase to accommodate the larger engine. In the home market, cars fitted with the 5M engine were slightly wider, while the 2-litre models remained compliant with the Japanese width regulations, staying under 1,700 mm (66.9 in). The front suspension used Macpherson struts while the rear used a semi-trailing link design with an attachment at the rear differential.[9]
+        
+        In 1981, Japanese buyers were offered an alternative to the Celica XX liftback bodystyle, called the Soarer coupé, which was now offered at two Japanese Toyota dealership networks called Toyota Store, and Toyopet Store, as the Celica XX was sold at the Toyota Corolla Store. The four-door performance saloon called the Celica Camry was realigned with the Japanese market Carina, and the Chaser performance sedan shared the Celica XX straight six, while in North America the Cressida took on that role.
+        
+        L-type and P-type
+        In the North American market, the Celica Supra was available in two distinct models. There was the "Performance Type" (P-type) and the "Luxury Type" (L-type). While being mechanically identical, they were differentiated by the available options; tyre size, wheel size, and body trim. The P-type had fibreglass fender flares over the wheel wells, while the L-type did not. The P-type was also standard with the more sporty eight-way adjustable seats. The P-type did not get the option of a leather interior until 1983. Initially, the Luxury type meant Automatic transmission, and Performance Type stood for Manual. All editions of the P-type had the same 14x7-inch aluminium alloy wheels and throughout the years the L-type had 14x5.5-inch wheels until 1985 when they were changed to a P-type styled 15x6. The L-type also had the option of a digital instrument cluster with a trip computer; some Canadian models (both L-types and P-types) had this option as well as a few rare instances of American models. The L-type cluster was easily distinguished from the P-type cluster, by the 'ECT' function written on the dial plate. The digital cluster featured a digital tachometer, digital speedometer, and electronic fuel level and coolant level gauges. The trip computer could calculate and display various things such as fuel economy in miles-per-gallon, estimated time of arrival (ETA), and distance remaining to destination. Supras with trip computers also came with cruise control. Excluding the 1982 model, all P-types were available with headlight washers as an option, but the L-types were never given such an option. Although gear ratios changed throughout the years, all P-types came standard with a limited-slip differential.[17]
+        
+        1981
+        
+        1982 Toyota Supra 2.8i L-Type (MA61)
+        In 1981, for the 1982 model year, in the North American market, the Celica Supra's engine was the 2.8-litre 12-valve (two valves per cylinder) DOHC 5M-GE. Power output was 145 hp (108 kW; 147 PS) SAE net and 155 lb⋅ft (210 N⋅m) of torque. The engine used an 8.8:1 compression ratio to achieve the power and featured a vacuum advanced distributor. When the car debuted, it had a drag coefficient of Cd=0.348, a 0–60 mph (0–97 km/h) acceleration time of 9.8 seconds and a 1⁄4 mile (400 m) time of 17.2-seconds at 80 mph (129 km/h).[18]
+        
+        The standard transmission for this year was the W58 5-speed manual with the A43DL 4-speed automatic transmission being an option for L-types. Both transmissions featured an overdrive gear and the automatic featured a locking torque converter. The top gear in the 5-speed was its overdrive whereas the automatic transmission featured an overdrive gear that would engage at speeds over 56 km/h (35 mph). The 1982 model's rear differential featured a 3.72:1 ratio. The Celica Supra's four-wheel independent suspension was specially tuned and designed by Lotus and featured variable assisted power rack-and-pinion steering and MacPherson struts up front. At the rear, it had semi-trailing arm suspension with coil springs and a stabilizer bar. Braking on the Celica Supra was handled by four-wheel disc brakes.
+        
+        On the interior, this generation had standard power windows, power door locks, and power mirrors as well as a tilt steering wheel. The power door lock was located in the centre console next to the power mirror control. The analog dash of this model only showed a top speed of 88 mph (142 km/h) in North America. The optional automatic climate control was renovated and was now seen as a standard feature on the A60. Cruise control and a retractable map light was standard in this generation. Some options included the addition of a sunroof, two-tone paint schemes, and a five-speaker AM/FM/MPX tuner with a cassette player (Fujitsu Ten Limited). The optional cassette stereo had a 105-watt power amplifier and a seven-band graphic equalizer. The standard stereo was a five-channel AM/FM/MPX tuner. Leather interior was an option on the L-type model, but the P-type models limited to standard striped cloth interior.
+        
+        The AM/FM antenna was integrated into the front windshield rather than a typical external mast antenna. There was a key lock on the gas tank door (in lieu of a remote release) and the hatch and rear bumper were black regardless of exterior colour on the rest of the car. The P-type was available with an optional rear window visor above the hatch glass. The tail lights had a reverse light in the centre and the door handles opened the doors by pulling sideways. The front nose badge and B-pillar only read "Supra" for the first several months of production, but were changed to read "Celica Supra" midway through the model year. The L-type had front and rear mudflaps but P-type of this year did not.
+        
+        1982
+        In 1982, for the 1983 model year, there were not many changes but there was an increase in power output to 150 hp (112 kW; 152 PS) and 159 lb⋅ft (216 N⋅m) of torque from the same 5M-GE engine. The only real change in the engine area was the switch from a vacuum advanced to an electronic advanced distributor, yet that did not increase the power output. Toyota switched to a 4.10:1 rear gear ratio for the P-type and a 3.73:1 for the L-type. As for the optional automatic transmission, they replaced the A43DL 4-speed with a newly designed A43DE 4-speed. It had an electronic controller that would adjust its shift pattern for a balance between performance and economy. It was the first in the industry to provide an electronically controlled transmission (ECT). This allowed the driver to choose either the "power" driving mode or "normal" driving mode at the touch of the button. The power mode provided the quickest acceleration and the normal mode provided the best all-around performance.
+        
+        The interior virtually had no changes, but changes to the exterior included a switch to a power mast antenna, mudflaps on all models, and the addition of headlight washers on the P-type. All B-pillar and nose badges for cars sold in North America read "Celica Supra" and only the P-type was available in two-tone colour schemes.
+        
+        1983
+        
+        1984 Toyota Supra 2.8 P-Type (MA67)
+        In 1983, for the 1984 model year, the changes were significant. Power output was increased on the 5-speed models to 160 hp (119 kW; 162 PS) and 163 lb⋅ft (221 N⋅m) of torque. The increase was achieved by a mixture of a redesigned intake manifold with D-shaped intake runners and an increase in compression ratio to: 9.2:1.[5] Another notable change in the 5-speed models was the switch to a 4.30:1 gear ratio in the rear differential. All automatic models retained the previous years power statistics, but the rear gear ratio was changed to 4.10:1.
+        
+        The most notable exterior changes included the switch to wraparound front turn signals, the option of either a rear wing spoiler mounted high up on the rear hatch, or rear window and quarter window louvers. Also, the tail-lights were redesigned and the hatch received a billboard "Supra" sticker instead of the smaller sticker, which was previously positioned on the right. The rear hatch and bumper was changed and received the same colour as the rest of the car (instead of the black of previous years). The door handles were also switched, opening by pulling up instead of sideways. Two-tone paint schemes also became available on both the P-type and L-type models.
+        
+        Some interior controls such as the steering wheel, cruise control, and door lock switch were redesigned. Toyota included a 130 mph (209 km/h) speedometer in North American models instead of the traditional 85 mph (140 km/h) speedometer and the automatic climate control display was also changed. The previous year's cassette and equalizer stereo option was now made a standard feature.
+        
+        1985–1986
+        
+        1986 Toyota Supra 2.8 with the third brake light (MA67)
+        The Supra was redesigned again in 1985. Power output was marginally increased to 161 hp (120 kW; 163 PS) and torque was up to 169 lb⋅ft (229 N⋅m). All models of this year had the same amount of power (both automatic models and 5-speed models). The engine received a redesigned throttle position sensor (TPS) as well as a new EGR system and knock sensor. With the slight increase in power the Supra was able to propel itself from 0–60 mph (97 km/h) in 8.4 seconds and netted a 16.1 second quarter-mile at 85 mph (137 km/h).[19]
+        
+        Other changes would be a redesigned, more integrated sunshade and spoiler on the rear hatch. The rear spoiler was changed from a one-piece to a two-piece. The option of a leather interior remained exclusive now for the P-Type. Toyota added a standard factory theft deterrent system and the outside mirrors were equipped with a defogger that activated with the rear defroster. All Supras this year received automatic-off lights that also encompassed an automatic illuminated entry and fade-out system.
+        
+        While 1985 was to be the last year of production of the second generation model, delays in production of the third generation model led to a surplus of second generation models. During the first half of 1986 the 1985 P-type was still offered for sale, with only minor cosmetic changes as well as the addition of a now mandatory rear-mounted third brake light on the hatch. These were all labelled officially as 1986 models. The P-type were the only model available for the 1986 model year. Production for the A60 Supra ended in December 1985 in order to make way for the upcoming A70 Supra.
+        
+        Markets
+        
+        1982-1983 Toyota Celica XX 2800GT (MA61)
+        
+        1983–1986 Toyota Celica XX 2000GT Twin Cam 24 (GA61)
+        The second generation of the Supra came in a variety of options around the world as well as only being offered during select years.
+        
+        Japan
+        From August 1982 to 1983, the Celica XX, as it was named in Japan, had fender mirrors and came in four models depending on the engine:[20][9]
+        
+        2800GT Twin Cam: 2,759 cc (2.759 L; 168.4 cu in) DOHC 5M-GEU 160 PS (118 kW; 158 hp) and 150 lb⋅ft (203 N⋅m) of torque.
+        2000GT Twin Cam 24: 1,988 cc (1.988 L; 121.3 cu in) DOHC 1G-GEU 160 PS (118 kW; 158 hp) and 134 lb⋅ft (182 N⋅m) of torque.
+        2000 Turbo: 1,988 cc (1.988 L; 121.3 cu in) SOHC turbocharged M-TEU 145 PS (107 kW; 143 hp) and 21.5 kg⋅m (211 N⋅m; 156 lb⋅ft) of torque.
+        2000: 1,988 cc (1.988 L; 121.3 cu in) SOHC 1G-EU 125 PS (92 kW; 123 hp) and 17.5 kg⋅m (172 N⋅m; 127 lb⋅ft) of torque.
+        From August 1983 to 1986, the Celica XX had door-mounted mirrors and the same four engines options but with performance improvements. The 5M-GEU engine compression ratio was increased to achieve 175 PS (129 kW; 173 hp) and 177 lb⋅ft (240 N⋅m) of torque and the M-TEU engine upgraded with an air-to-liquid intercooler to 160 PS (118 kW; 158 hp) and 23.5 kg⋅m (230 N⋅m; 170 lb⋅ft) of torque.[21][9]
+        
+        Most of Europe
+        Sold from August 1982 to 1986.[16]
+        82–83: 2,759 cc (2.759 L; 168.4 cu in) DOHC 5M-GE 130 kW (174 hp; 177 PS) and 207 lb⋅ft (281 N⋅m) of torque. Analog instrument cluster, no fender flares.
+        84–86: 2,759 cc (2.759 L; 168.4 cu in) DOHC 5M-GE 170 PS (125 kW; 168 hp) and 212 lb⋅ft (287 N⋅m) of torque. Digital dash, P-Type fender flares.
+        Great Britain
+        Sold from 1982 to 1986.
+        82–83: 2,759 cc (2.759 L; 168.4 cu in) DOHC 5M-GE 178 hp (133 kW; 180 PS) and 212 lb⋅ft (287 N⋅m) of torque. Analog dash, no fender flares.
+        84–86: 2,759 cc (2.759 L; 168.4 cu in) DOHC 5M-GE 178 hp (133 kW; 180 PS) and 212 lb⋅ft (287 N⋅m) of torque. Digital dash, P-Type fender flares.
+        Australia, Sweden, and Switzerland
+        Sold from 1984 to 1986 - these had a version of the earlier single-cam engine as it was not worth the expense of making the twin cam engine meet the particular emissions regulations shared by these three countries. This particular engine was also used in the Cressida and the Crown in the Swiss market.
+        2,759 cc (2.759 L; 168.4 cu in) SOHC 5M-E 140 PS (103 kW; 138 hp) and 167 lb⋅ft (226 N⋅m) of torque.
+        The Supra in Australia was sold from 1983 to 1986 had a digital instrument cluster, fender flares, 14x7-inch wheels, 84 style lights, single piece spoiler, LSD and optional sunroof. This was the only variant and no L Type model was offered.
+        In Australia, the Supra (manufactured between 1982 and 1990), was assessed in the Used Car Safety Ratings in 2006 as providing "worse than average" protection for its occupants in the event of a crash.
+        New Zealand
+        Sold from 1984 to 1985
+        2,759 cc (2.759 L; 168.4 cu in) DOHC 5M-GE 133 kW (178 hp; 181 PS) and 212 lb⋅ft (287 N⋅m) of torque. Digital dash, P-Type fender flares.
+        Powertrain
+        Code	Year	Engine	Power	Torque	Transmission	Market
+        MA61	1982–1983	2,759 cc (2.8 L; 168.4 cu in) 5M-GE I6	170 PS (125 kW; 168 hp)	207 lb⋅ft (281 N⋅m)	5-speed W57 manual
+        4-speed A43DL automatic (1982)
+        4-speed A43DE automatic (1983)	Europe and United Kingdom
+        2,759 cc (2.8 L; 168.4 cu in) 5M-GEU I6	24.0 kg⋅m (235 N⋅m; 174 lb⋅ft)	5-speed W58 manual	Japan[22]
+        1984–1985	2,759 cc (2.8 L; 168.4 cu in) 5M-E I6	104 kW (139 hp; 141 PS)	167 lb⋅ft (226 N⋅m)	5-speed W57 or W58 manual
+        4-speed A43DE automatic	Australia, Switzerland and Sweden
+        2,759 cc (2.8 L; 168.4 cu in) 5M-GE I6	180 PS (132 kW; 178 hp)	170 lb⋅ft (230 N⋅m)	Europe, United Kingdom and New Zealand
+        2,759 cc (2.8 L; 168.4 cu in) 5M-GEU I6	175 PS (129 kW; 173 hp)	177 lb⋅ft (240 N⋅m)	5-speed W58 manual	Japan
+        MA63	1982	1,988 cc (2.0 L; 121.3 cu in) M-TEU turbocharged I6	145 PS (107 kW; 143 hp)	156 lb⋅ft (212 N⋅m)	4-speed A43D Automatic	Japan
+        1983–1985	1,988 cc (2.0 L; 121.3 cu in) M-TEU turbocharged I6	160 PS (118 kW; 158 hp)	170 lb⋅ft (230 N⋅m)
+        MA67	1982	2,759 cc (2.8 L; 168.4 cu in) 5M-GE I6	145 hp (108 kW; 147 PS)	155 lb⋅ft (210 N⋅m)	5-speed W58 manual
+        4-speed A43DL automatic	Canada and United States
+        1983	2,759 cc (2.8 L; 168.4 cu in) 5M-GE I6	150 hp (112 kW; 152 PS)	159 lb⋅ft (216 N⋅m)	5-speed W58 manual
+        4-speed A43DE automatic
+        1984	2,759 cc (2.8 L; 168.4 cu in) 5M-GE I6	160 hp (119 kW; 162 PS)	163 lb⋅ft (221 N⋅m)	5-speed W58 manual
+        2,759 cc (2.8 L; 168.4 cu in) 5M-GE I6	150 hp (112 kW; 152 PS)	159 lb⋅ft (216 N⋅m)	4-speed A43DE automatic
+        1985-1986	2,759 cc (2.8 L; 168.4 cu in) 5M-GE I6	161 hp (120 kW; 163 PS)	169 lb⋅ft (229 N⋅m)	5-speed W58 manual
+        4-speed A43DE automatic
+        GA61	1982–1985	1,988 cc (2.0 L; 121.3 cu in) 1G-EU I6	125 PS (92 kW; 123 hp)[22]	174 lb⋅ft; 235 N⋅m (24.0 kg⋅m)	5-speed W55 manual
+        4-speed A43DL automatic	Japan
+        1982–1985	1,988 cc (2.0 L; 121.3 cu in) 1G-GEU I6	160 PS (118 kW; 158 hp)	134 lb⋅ft (182 N⋅m)	5-speed W55 manual
+        Third generation (A70; 1986)
+        Third generation
+        
+        1986 Toyota Supra 2.0GT Twin Turbo (GA70)
+        Overview
+        Model code	A70
+        Production	February 1986[16] – April 1993
+        Model years	1986–1993
+        Assembly	Japan: Tahara, Aichi (Tahara plant; February 1986 – December 1992)[8]
+        Body and chassis
+        Related	Toyota Soarer (Z20)
+        Powertrain
+        Engine	
+        1988 cc 1G-EU I6
+        1988 cc 1G-FE I6
+        1988 cc 1G-GEU DOHC I6
+        1988 cc 1G-GTE DOHC twin-turbo I6
+        2491 cc 1JZ-GTE DOHC twin-turbo I6
+        2954 cc 7M-GE DOHC I6
+        2954 cc 7M-GTE DOHC turbo I6
+        Transmission	
+        5-speed W58 manual
+        5-speed R154 manual
+        4-speed A340E automatic
+        Dimensions
+        Wheelbase	2,596 mm (102.2 in)
+        Length	4,620 mm (181.9 in)
+        Width	
+        1,690 mm (66.5 in)
+        1,760 mm (69.3 in) (3.0 L)
+        Height	
+        1,310 mm (51.6 in) (1986–1988)
+        1,300 mm (51.2 in) (1989–1993)
+        Curb weight	
+        1,460–1,640 kg (3,219–3,616 lb) (manual)
+        1,580–1,720 kg (3,483–3,792 lb) (automatic)
+        In February 1986, the bonds between the Celica and the Supra were cut; they were now two completely different models. The Celica changed to a front-wheel drive layout, using the Toyota "T" platform associated with the Corona, while the Supra kept its rear-wheel-drive layout. The engine was updated to a more powerful 2,954 cc (3.0 L) inline-six engine rated at 149 kW (200 hp; 203 PS). Although initially only available with naturally aspirated engines, a turbocharged version was added in the 1987 model year. The Supra continued its relationship with the Soarer.
+        
+        All Japanese market models with the various versions of the 2.0 L engine were slightly narrower overall so as to be in compliance with Japanese Government dimension regulations so that Japanese buyers weren't liable for yearly taxes for driving a larger car.
+        
+        
+        1986 Supra (MA70; rear view)
+        The new engine used in the A70 Supra, the Toyota 7M-GE, was the flagship engine of Toyota's arsenal. Both versions of the engine contained 4 valves per cylinder and dual overhead cams. The turbocharged 7M-GTE engine was Toyota's first distributor-less engine offered in the US which used coil packs sitting on the cam covers and a cam position sensor driven by the exhaust camshaft.[23] It was equipped with a CT26 turbocharger and was rated at 172 kW (231 hp; 234 PS) at 5,600 rpm while the naturally aspirated 7M-GE engine was rated at 149 kW (200 hp; 203 PS) at 6,000 rpm. Further refinement on the turbo model increased power to 173 kW (232 hp; 235 PS) at 5,600 rpm and 254 lb⋅ft (344 N⋅m) of torque at 3,200 rpm in 1989. This was mostly due to a redesign of the wastegate. All models used the same tyre size of 225/50R16 on 16x7 inch wheels. Spare tyres were full-sized but on steel wheels.
+        
+        The naturally aspirated model came standard with the W58 manual transmission. The turbocharged models included the R154 manual transmission. Both were available with the optional 4-speed A340E automatic transmission.
+        
+        
+        The third-generation Supra represented an arsenal of new technology. In 1986, options available for the Supra included a 3-channel ABS and TEMS which gave the driver two settings which affected the damper rates; a third was automatically activated at wide open throttle, hard braking, and high speed maneuvering.
+        
+        ACIS (Acoustic Control Induction System), a method of controlling air compression pulses inside the intake piping to increase power, was also a part of the 7M-GE's technological arsenal. All models were fitted with double wishbone suspension front and rear. A targa top was offered in all model years along with a metal power sliding sunroof (added in 1991).
+        
+        Production numbers of the GA70/MA70/JZA70 Supra was estimated at 241,471 units.
+        
+        1986 1/2
+        The third-generation Supra was introduced in February 1986 as a stand-alone model, officially being separate from the Celica. Whereas the Celica became a front-wheel-drive sport coupe, the Supra retained its image as a rear-wheel-drive sports/GT car. The new Supra would continue to move upscale and become a showcase for Toyota's technology. The Supra was powered by a 3.0-litre DOHC inline six-cylinder engine rated at 149 kW (200 hp; 203 PS). Notable features included an electronically-controlled independent suspension (called the Toyota Electronic Modulated Suspension – TEMS), and some came with a removable Sport-Roof panel (Targa top).
+        
+        1987
+        The A70 Supra Turbo was introduced in 1987. The intercooled, turbocharged version of the 3.0-litre inline 6-cylinder engine boosted power to 172 kW (231 hp; 234 PS) and 240 lb⋅ft (325 N⋅m) of torque. The engine, designated as 7M-GTE, was one of the first distributor-less mass production engines in the United States. This was accomplished with 3 coils being shared using the wasted spark system. The Turbo model also included an engine oil cooler and an integrated rear spoiler. The sports package, which was standard on the Turbo and optional on the base model, included a limited-slip differential (LSD), TEMS, and headlamp washers. A new 4-channel anti-lock braking system (ABS) was optional on both models. In 1987, a new beige/tan colour combination was implemented, and only 1,000 cars were produced with this scheme. Toyota installed its variable induction technology into the DOHC twin-turbocharged 1G-GTE engine called T-VIS and also included it into the 7M-GTE engine as well.
+        
+        1988
+        Changes for the 1988 model year were nominal with the exception of the discontinuation of two-toned brown exterior paint. The spoiler-mounted brake light changed from a square to a trapezoid shape. Seat pattern was changed from squares to lines, and "foil" on climate control and switch gear changed from light to dark gray. Japanese buyers could select from six different trim packages starting with the top level 3.0 GT Turbo Limited with the 7M-GTEU engine, followed by the 3.0 GT Turbo, GT Twin Turbo with the 1G-GTEU DOHC 2.0 L engine, the GT with the 2.0 L DOHC 1G-GEU engine, the G with the 1G-EU engine and the S with the 1G-EU engine as the base model. All Japanese models came with either a 5-speed manual transmission or the 4-speed automatic transmission with ECT-s except the G and the S on which the ECT-s wasn't available. In Japan, the 3.0 GT Turbo Limited, the 3.0 GT Turbo and the GT Twin Turbo were installed standard with a digital instrument panel, the 3.0 L models came with an AM/FM Cassette stereo with an integrated CD player and cruise control. Climate control was also standard on all turbocharged models, and leather interior was only available on the GT Turbo Limited.
+        
+        1989
+        Changes for the 1989 model year include modifications to the wastegate actuator, feed location and engine management increased power output by 1.5 kW (2 hp; 2 PS) on the turbo model. The engine mount and brace were also revised in late 1989. The changes made to the cross member and mounts made to accommodate the (1JZ engine) for Japanese models. The protective body molding was also changed by taking away the steel reinforcement. This made the molding lighter and prevented the rusting problem found on the previous year models. The "white package" was introduced as well, featuring white body molding and white "saw blade" wheels. Interior choices were limited to blue and burgundy only. Other than pure cosmetics changes, there was nothing different from other models. All models received rear 3-point seat belts to replace the previous years' two-point lap belts. New tail lights, front bumper with integrated lower grille (as opposed to the previous years' detachable grille), side mirrors, turn signals, upper grilles, foglights, steering wheel, door panels, climate control, window switches and bezels, and stereo are added. Addition of coat hooks on B-pillar and removal of rear seat pockets round out interior changes. Turbo models received three piece spoiler with an integrated LED brake light. 1989 also marked the end of headlight washers in the US and SuperMonitor; an advanced system offered by Toyota able to calculate miles able to be traveled on current tank, ability to check vehicle codes from inside the cabin, among other features.
+        
+        1990
+        
+        1990 Toyota Supra 3.0i turbo (MA70)
+        For the 1990 model year, changes included larger protective laminate in front of rear wheels, lower redline (owing to the heavier crank with cylinders 2 & 5 counterbalanced), redesigned steering wheel with cruise control relocated to a stalk on the right side (US only). In addition to a driver-side airbag and airbag indicator light on dashboard (US only), the left side of the switch panel was also redesigned, which replaced one of the coin slots with the dimmer. The lower dashboard panel became a two-piece design, which was also much heavier than the previous one-piece panel owing to a change in material. Finally, the memory lever on the steering column was removed. In short, a plethora of the changes for the 1989 and 1990 were to the interior.
+        
+        1991
+        
+        1991–1992 Toyota Supra 3.0i (MA70)
+        For the 1991 model year, the wheel design was changed to 5-spoke wheels. Both models had 16x7-inch aluminium alloy wheels that were fitted with 225/50/16 tyres and full-sized spares on steel wheels. Body molding changed in colour to better match the exterior. The front "Supra" emblem was also changed to the current corporate oval Toyota symbol was used from this model year onwards. The speedometer was also revised, and included more lines that were removed in 1989, but still did not have as many (one line per mph) as 1986.5 to 1988 models. New interior colours, namely shadow gray and deep red, were introduced, which marked the end of medium gray, tan and burgundy. Blue interior became only available on white packages, and those with blue paint. Burgundy was replaced with white package-only deep red. Every other body colour received a shadow gray interior, with leather interiors retaining medium gray seats and interior inserts. Front speakers were changed from 3.5 inch to 6.5 inches and the speaker cover was also enlarged to accommodate them. Beginning in 1991, Toyota began to offer a factory spoiler-style panel sunroof. These sunroofs are now highly sought after and rare since they were introduced in the ending production years of the A70 Supra.
+        
+        1992
+        
+        1992 Toyota Supra with sunroof (MA70)
+        For the 1992 model year, the leather shadow gray interiors received black seats and inserts. Non-turbo models lost the option of a targa top, and a new optional subwoofer was available. Subwoofer-equipped Supras did without the rear bins and wooden "floorboard". Instead, rear carpet was molded to the spare tyre, and there was a cut-out for the woofer housing.
+        
+        JZA70 and GA70
+        The Japanese models of the Supra were given the chassis codes JZA70 and GA70 respectively. The JZA70 has a 2.5-litre 206 kW (276 hp; 280 PS) parallel twin-turbocharged 1JZ-GTE engine, and the GA70 has a 2.0-litre 154 kW (207 hp; 209 PS) twin-turbocharged 1G-GTE and a naturally aspirated 1G-GEU engines respectively.
+        
+        JZA70-R
+        In addition to the introduction of the JZA70 in 1990, Toyota introduced a special version of the JZA70 with the 1JZ-GTE engine known as the 2.5 Twin Turbo R model (JZA70-R). It boasted additional upgrades, including lighter sway bars, a larger intercooler, Torsen differential, Interbred TEIN/Bilstein sports suspension, Shadow/Dark grey interior trim, MOMO steering wheel and gear knob and Recaro seats and door trim. The wheels were painted charcoal grey, and the front bumper lip featured channeled air ducts for the front brakes. The Twin Turbo R introduced a new and exclusive colour option in 1992 for the JZA70-R model known as Jade Mica Green. (Note: this colour was also available in Europe) The JZA70-R model is the lightest and fastest model of third generation of the Supra.
+        
+        Turbo A
+        The Turbo-A was Toyota's evolution model for the Group A touring car series that required a minimum homologation run of 500 units. The Turbo-A was manufactured for 2 months during the period of September and October 1988 and was available strictly in Japan. Thus the term 88 Spec A. Some notable differences between the standard MA70 Supra 3.0 GT and the Turbo-A model are both cosmetic and mechanical;
+        
+        The standard CT-26 turbo had a slightly larger inducer and can be identified by a stamped "E" on the raised casting on the compressor housing.
+        The Turbo-A had a 65 mm (2.6 in) wide throttle body and accompanied a larger diameter "blank" crossover pipe, instead of the standard 7M-GTE 60 mm (2.4 in) throttle body and original "3000" cast pipe.
+        The Turbo-A also benefited from a larger volume steel air cleaner instead of the factory plastic unit
+        Thicker roll bars front and rear
+        Ventilated brake discs all-round
+        The fuel management used a MAP system, instead of the standard Karmen Vortex AFM.
+        The front nose features an additional "Turbo A duct" to add airflow to the top area of the intercooler.
+        Also unique was the side decal and rear badging ("3.0GT Turbo A") and a black paint job (paint code 202).
+        All cars came standard with grey leather interior featuring a MOMO-sourced steering wheel and shift knob. It is powered by a 204 kW (274 hp; 277 PS) Toyota 7M-GTEU engine. It is important to note that the 7M-GTEU was standard in all Japanese MA70 models and is not unique to the Turbo-A. The "U" designation meant the engine came equipped with a catalytic converter as per Japan emission laws.
+        
+        
+        Toyota Supra MA70 Group-A in 1991 at Bathurst
+        The Group-A MA70 Supra had varying degrees of success in various fields such as Rally and 24HR, but is most known for its participation in the Japanese Touring Car Championship (JTCC). In the JTCC the Supra did not win as many races as intended, which is primarily judged on the fact it was underdeveloped and its placement in a higher tier division under regulations because of the 3.0-litre engine displacement, imposing the Toyota with the performance inhibition of running with a higher curb weight and less power compared to the rest of its class.[citation needed] Both the TOM'S and SARD teams fared well in results in the (JTCC) with the TOM'S team winning on its debut in 1987, before abruptly ending their (JTCC) career with the MA70 Group-A in 1989.
+        
+        Upon its initial Australian Touring Car Championship (ATCC) debut in 1989, the Group-A Supra failed to finish its first race. With DNF's becoming a regular upset owing to the lack of power and heavy weight of the Supra, it began to strike doubt in the car's capability of success in the (ATCC) which suffered increasingly due to constant rules and regulation changes issuing a red-faced outcome against its main rivals like the Ford Sierra Cosworth RS500, Nissan Skyline HR31 GTS-R and the BMW M3 (E30) which were lighter, more powerful and had more development behind them. Hopes would further diminish for Toyota in the top division by the introduction of the domineering Nissan Skyline GT-R (R32) in the (JTCC) in 1989 and the Australian Touring Car Championship (ATCC) in 1990. Australian racing team Fitzgerald Racing won the first edition of the March 1991 Bathurst 12 Hour. Toyota in 1991 would switch to racing the Corolla Levin instead in the lower tier divisions, while many privateer teams soldiered on with the Supra until the Group A racing's final demise in 1993.
+        
+        Only eleven MA70 Group-A cars were built by TRD Japan for homologation racing. A few out of many special developed parts that were fitted to the various Group-A race cars happen to include a cast magnesium nine litre oil pan with matching high flow oil pump, 288 camshafts with 10.88mm lift, Hollinger close proportion 5-speed gear-set in the R154 case, Harrop 4 piston brake calipers with 15.5-inch (393 mm) rotors, and TRD-sourced torque-vectoring mechanical limited-slip differential with 50:50 left:right lockup on full throttle. TRD was also responsible for the thick rear-anti squat tram-rods which were integral to the multi-link rear suspension setup to control rear squat under hard acceleration and launching.
+        
+        Powertrain
+        Code	Year	Engine	Power	Torque	Transmission	Market
+        MA70	February 1986 – May 1993	2,954 cc (3.0 L; 180.3 cu in) Toyota 7M-GE I6	149 kW (200 hp; 203 PS)	196 lb⋅ft (266 N⋅m)	5-speed W58 manual
+        4-speed A340E automatic	Canada, Europe, United States and Australia
+        2,954 cc (3.0 L; 180.3 cu in) 7M-GTE turbo I6	173 kW (232 hp; 235 PS)	254 lb⋅ft (344 N⋅m)[24]	5-speed R154 manual
+        4-speed A340E automatic	Canada, Europe, Japan, United States and Australia
+        GA70	February 1986 – 1992	1,988 cc (2.0 L; 121.3 cu in) 1G-GEU I6	118 kW (158 hp; 160 PS)	130 lb⋅ft (176 N⋅m)	5-speed W58 manual
+        4-speed A340E automatic	Japan
+        1,988 cc (2.0 L; 121.3 cu in) 1G-GTE twin-turbocharged I6	154 kW (207 hp; 210 PS)	180 lb⋅ft (244 N⋅m)	5-speed W58 manual
+        4-speed A340E automatic	Japan
+        JZA70	1990–1993	2,491 cc (2.5 L; 152.0 cu in) 1JZ-GTE twin-turbocharged I6	206 kW (276 hp; 280 PS)	268 lb⋅ft (363 N⋅m)	5-speed R154 manual
+        4-speed A342E automatic	Japan
+        Fourth generation (A80; 1993)
+        Fourth generation
+        
+        Pre-facelift Toyota Supra A80
+        Overview
+        Model code	A80
+        Production	May 1993[25] – August 2002[26]
+        Model years	1994–1998 (North America)
+        Assembly	
+        Japan: Toyota City, Aichi (Motomachi plant; May 1993 – April 1997);[25][27]
+        Susono, Shizuoka (Higashi Fuji plant; May 1997 – April 2002)[28]
+        Designer	Isao Tsuzuki (1990)[29]
+        Body and chassis
+        Related	
+        Toyota Soarer/Lexus SC (Z30)
+        Ohno Naomi III[30]
+        Powertrain
+        Engine	
+        2997 cc 2JZ-GE I6
+        2997 cc 2JZ-GTE twin-turbo I6
+        Transmission	
+        5-speed W58 manual
+        6-speed V16x (Getrag 233) manual
+        4-speed A340E automatic
+        Dimensions
+        Wheelbase	2,550 mm (100.4 in)[31][32]
+        Length	4,515–4,520 mm (177.8–178.0 in)[31][32]
+        Width	1,810 mm (71.3 in)[31][32]
+        Height	1,275 mm (50.2 in)[31][32]
+        Curb weight	
+        1,410–1,510 kg (3,109–3,329 lb) (naturally aspirated)
+        1,490–1,570 kg (3,285–3,461 lb) (turbo)
+        The A80 program began in February 1989 under various teams for design, product planning, and engineering led by Isao Tsuzuki. By the middle of 1990, a final A80 design concept from Toyota Technical Centre Aichi was approved and frozen for production in late 1990. The first test mules were hand-built in A70 bodies during late 1990, followed by the first A80 prototypes being hand-assembled in 1991.
+        
+        Again using subframe, suspension, and drivetrain assemblies from the Z30 Soarer (Lexus SC300/400), pre-production of the test models started in December 1992 with 20 units made,[33] and official mass production began in April 1993.[33][inconsistent] The fourth-generation Supra again shared its platform with the upscale Soarer coupe, sold in the US as the Lexus SC. Although the two cars looked similar dimension-wise, the new Supra was more than 13 inches (340 mm) shorter than its luxurious cousin.[34]
+        
+        This redesign saw Toyota placing great emphasis on a more serious high-performance car. The A80 featured two new engines: a naturally aspirated Toyota 2JZ-GE having a power output of 164 kW (220 hp; 223 PS) at 5,800 rpm and 210 lb⋅ft (285 N⋅m) at 4,800 rpm of torque and a twin turbocharged Toyota 2JZ-GTE having a power output of 206 kW (276 hp; 280 PS) and 318 lb⋅ft (431 N⋅m) of torque for the Japanese model. For the export model (American/European markets) Toyota upgraded the Supra turbo's engine (by installing smaller, steel wheeled turbochargers and bigger fuel injectors, etc.). This increased the power output to 239 kW (321 hp; 325 PS) at 5,600 rpm and 315 lb⋅ft (427 N⋅m) of torque at 4,000 rpm (243 kW (326 hp; 330 PS) and 325 lb⋅ft (441 N⋅m) for European markets) Upon its launch in 1993, it was the first Toyota-badged vehicle to include a passenger-side airbag as standard (US-market only).[33]
+        
+        The twin turbochargers operated in sequential mode instead of parallel. Initially, all of the exhaust gases are routed to the first turbine for reduced lag. This resulted in boost and enhanced torque as early as 1,800 rpm, where it already produced 300 lb⋅ft (407 N⋅m) of torque. At 3,500 rpm, some of the exhaust gases are routed to the second turbine for a "pre-boost" mode, although none of the compressor output is used by the engine at this point. At 4,000 rpm, the second turbo's output is used to augment the first turbo's output. Compared to the parallel mode, sequential mode turbochargers provide quicker low RPM response and increased high RPM boost. This high RPM boost was also aided with technology originally present in the 7M-GE in the form of the Acoustic Control Induction System (ACIS) which is a way of managing the air compression pulses within the intake piping as to increase power.
+        
+        For this generation, the Supra received a new six-speed Getrag/Toyota V160 gearbox on the turbo models while the naturally aspirated models were equipped with a five-speed manual W58 transmission, revised from the previous model. Each model was offered with a four-speed automatic with manual shifting mode.
+        
+        All vehicles were equipped with five-spoke aluminium alloy wheels, the naturally aspirated models had 16-inch wheels and the turbo models had 17-inch wheels wearing 235/45/17 fronts and 255/40/17 rear tyres. The difference in wheel size was to accommodate the larger brakes equipped as standard on the turbo model, but in Japan were optional equipment. The turbo models had 4-piston front calipers with 2-piston rear calipers. The naturally aspirated models came equipped with dual front and single rear piston calipers. Both models had a space saver spare tyre on a steel rim to save both space and weight. All models used a double-wishbone suspension front and rear.
+        
+        
+        Rear view (pre-facelift)
+        
+        European specification with bonnet scoop[31] and OEM active front lip (pre-facelift)
+        
+        European specification taillights
+        
+        Interior (pre-facelift)
+        Toyota took measures to reduce the weight of this new model. Aluminium was used for the bonnet, targa top (when fitted), front crossmember, oil and transmission pans, and forged upper suspension A-arms. Other measures included hollow carpet fibres, magnesium-alloy steering wheel, plastic gas tank and lid, dished out head bolts, gas injected rear spoiler, and a single pipe exhaust. Despite having more features such as dual airbags, traction control, larger brakes, wheels, tyres, and an additional turbocharger, the car was at least 91 kg (200 lb) lighter than its predecessor. The base model with a manual transmission had a curb weight of 1,456 kg (3,210 lb). The targa top added 18 kg (40 lb) of weight while the automatic transmission added 25 kg (55 lb). The fourth-generation model had a 51:49 (front:rear) weight distribution. The turbo model weighed 1,565 kg (3,450 lb) with a manual transmission while the automatic added another 4.5 kg (10 lb) to the overall weight. Weight distribution was 53% front and 47% rear. The Supra was heavier than the Mazda RX-7 and all aluminium bodied Acura/Honda NSX and weighed about the same amount as the Nissan 300ZX, but was lighter than the Mitsubishi 3000GT VR-4.[35]
+        
+        By the late 1990s, sales of all sport coupes were declining in North America. Furthermore, a stronger yen pushed prices up in markets outside Japan.[36] The Supra was withdrawn from the Canadian market in 1996 and the US in 1998. The Turbo was not available in 1998 in California Air Resources Board (CARB) states. Production continued in Japan until August 2002, ceasing owing to restrictive emission standards.
+        
+        Performance
+        The turbocharged variant could accelerate 0–97 km/h (0–60 mph) in as low as 4.6 seconds and cover 402 m (1⁄4 mile) in 13.1 seconds at 175 km/h (109 mph).[37] Car and Driver magazine includes a rollout in their 4.6 seconds test (typically about 0.3 second) that they subtract from the acceleration figures.[38] The turbo version has a tested top speed of 257 km/h (160 mph),[39] but the cars are restricted to just 180 km/h (112 mph) in Japan and 250 km/h (155 mph) in worldwide markets. European versions of the car also had an air intake or scoop on the bonnet. It has a drag coefficient of Cd=0.31 for the naturally aspirated models and 0.32 for the turbo models but unknown with the rear spoiler.
+        
+        The standard A80 Supra chassis has also proven an effective platform for roadracing, with several top 20 and top 10 One Lap of America finishes in the SSGT1 class. In 1994, the A80 managed remarkable skidpad ratings of 0.95 lateral g's (200 ft) and 0.98 lateral g's (300 ft)[40] The Supra also featured a four-sensor four-channel track tuned ABS system with yaw control whereby each caliper is sensored and the brakes are controlled individually according to the speed, angle, and pitch of the approaching corner. This unique Formula One-inspired braking system allowed the Supra Turbo to record a 113 km/h (70 mph) -0 braking distance of 149 ft (45 m),[41] the best braking performance of any production car tested in 1997 by Car and Driver magazine. This record was finally broken in 2004 by a Porsche Carrera GT, which did it in 145 ft (44 m).
+        
+        1994
+        In 1994, Toyota Racing Development displayed a replica of the 1994 JGTC BLITZ Racing Team Supra GT500 race car, known as the TRD3000GT. The differences with the standard Supra was mainly with the body kits, aiming for better aerodynamics. The new body kit made the car 60 mm wider at the front and 50 mm wider at the rear. This allowed wider wheels to be fitted, which in turn improved the car's lateral grip. The engine and suspension also got small modifications. Only 35 examples of these were ever produced, each of which came with its own specially numbered VIN plate that officially re-classified the car as a TRD3000GT rather than a Toyota Supra.[42]
+        
+        1995
+        In 1995, for the 1996 model year, in the US the turbo model was only available with an automatic transmission owing to OBD-II certification requirements. The targa roof was also made standard on all turbo models.
+        
+        1996
+        
+        Toyota Supra RZ (facelift)
+        
+        Interior (facelift)
+        In 1996, for the 1997 model year, manual transmission returned for the turbo engine along with a redesign of the taillights, headlights, front fascia, polished wheels, and other minor changes such as the radio and steering wheel designs. Each of the Supras had a badge indicating "Limited Edition 15th Anniversary". All turbo models came standard with the rear spoiler.[clarification needed]
+        
+        1997
+        
+        Facelift Aerotop/Targa Supra
+        In 1997, for the 1998 model year, updates were a 3-spoke steering wheel, a redesigned radio, and VVT-i on the naturally aspirated engine. In Japan, the turbo engines were installed with VVT-i. The SZ-R model was also updated with the introduction of a six-speed Getrag V161 transmission, the same one used for the twin-turbo RZ models. The RZ-S received a tiptronic gearbox with steering wheel mounted gear controls. The RZ and SZ-R were both factory-fitted with Toyotas REAS suspension and carbon-fibre steering wheel to aid in the light feeling of steering. The RZ only came with a six-speed manual gearbox that was also used on the SZ-R and was factory fitted with Recaro SR2 front seats. The RZ model series of this time would end up being one of the rarest halo cars of the Japanese manufacturers, with about 653 units being produced for the 1998 model year up until the end of production in 2002, being outsold by the Nissan Skyline GTR, Mazda RX7 and the Honda/Acura NSX.
+        
+        Powertrain
+        Code	Year	Engine	Power	Torque	Transmission	Market
+        JZA80	April 1993 – August 2002	2,997 cc (3.0 L; 182.9 cu in) Toyota 2JZ-GE I6	165 kW (225 PS; 222 hp)
+        164 kW (223 PS; 220 hp)	284 N⋅m (209 lb⋅ft)	5-speed W58 manual
+        4-speed A340E automatic	Japan
+        Canada and United States (up to 1998)
+        April 1993 – 1998	2,997 cc (3.0 L; 182.9 cu in) Toyota 2JZ-GTE twin-turbocharged I6	206 kW (280 PS; 276 hp)	431 N⋅m (318 lb⋅ft)	6-speed V160 manual
+        4-speed A340E automatic	Japan
+        2,997 cc (3.0 L; 182.9 cu in) Toyota 2JZ-GTE twin-turbocharged I6	239 kW (324 PS; 320 hp)	427 N⋅m (315 lb⋅ft)	6-speed V160 manual
+        4-speed A340E automatic	Canada and United States
+        2,997 cc (3.0 L; 182.9 cu in) Toyota 2JZ-GTE twin-turbocharged I6	243 kW (330 PS; 325 hp)	441 N⋅m (325 lb⋅ft)	6-speed V160 manual
+        4-speed A340E automatic	Europe
+        September 1997 – August 2002	2,997 cc (3.0 L; 182.9 cu in) Toyota 2JZ-GTE VVT-i twin-turbocharged I6	206 kW (280 PS; 276 hp)	451 N⋅m (333 lb⋅ft)	6-speed V161 manual
+        4-speed A340E automatic	Japan
+        Fifth generation (J29/DB; 2019)
+        Main article: Toyota GR Supra
+        
+        Fifth-generation Supra, front view
+        
+        Fifth-generation Supra, rear view
+        The fifth-generation Supra was released in January 2019 after 17 years off the market as the GR Supra, part of Toyota's Gazoo Racing (GR) family of performance cars.[43] It was developed in partnership with BMW, sharing the platform and many parts from the BMW Z4 (G29) with BMW derived 4- and 6-cylinder turbocharged engines and maintaining rear-wheel drive layout from the previous Supra. The model is designated with BMW model codes "J29" or "DB", however Toyota used the "A90" and "A91" codes for promotional and marketing materials for the fifth-generation Supra to maintain the lineage from the previous Supra.[44][45][46] The GR Supra is manufactured at the Magna Steyr plant in Graz, Austria alongside the Z4.[47]
+        
+        The fifth-generation Toyota Supra was launched in total seven colour options including CU Later Gray, Stratosphere, Burnout, Absolute Zero, Nocturnal, Renaissance 2.0, and Nitro Yellow. Apart from the cosmetics, in 2023, new driving modes are introduced called Hairpin+. This mode allows additional wheel-spin on one of the rear tyres to help rotate the Supra around ultra-tight hairpin turns.[48]
+        
+        Motorsport
+        
+        1997 Castrol TOM's Supra GT500 racecar
+        Main article: Toyota Supra in motorsport
+        The Supra has been used in many levels of motorsport, with some prominent examples being in Group A (international)[49] and JGTC/Super GT (Japan).[50]
+        
+        Awards
+        The A60, with its all-new design, quickly became a success in the US where it was awarded the Import Car of the Year by Motor Trend. It also made Car and Driver magazine's Ten Best list for 1983 and 1984.
+        In 1994, the A80 Supra won Popular Mechanics "Design & Engineering awards".[6]
+        The fifth-generation GR Supra (J29/DB) was selected to be on Car and Driver magazine's 10Best list for 2020, 2021, and 2023, and was named to the magazine's Editor's Choice list in the Sports Car category for 2020, 2021, 2022, and 2023.[51][52][53][54][55][56]
+        It won "Best Sports Coupe" for 2020 and 2021 in MotorWeek magazine's Drivers' Choice Awards.[57][58]
+        In 2019, the fifth-generation GR Supra won Auto Bild magazine's "Golden Steering Wheel" award for Best New Sports Car, and was named the "Car of the Year" by Esquire magazine.[59][60]
+        In 2020, the GR Supra won Sport Auto magazine's "Best Handling Car 2020", and was Automobile magazine's 2020 Automobile All-Stars winner.[61][62]
+        In 2021, the Specialty Equipment Market Association (SEMA) awarded the fifth-generation GR Supra as the "Sport Compact of the Year".[63]
+        Production timeline
+        1979 – Celica Supra A40 introduced with 2,563 cc (2.563 L; 156.4 cu in) SOHC 4M-E I6 engine.
+        1981 – A40 engine displacement increased to 2,759 cc (2.759 L; 168.4 cu in) with the introduction of the SOHC 5M-E I6 engine.
+        1982 – A60 Celica Supra introduced with a 2,759 cc (2.759 L; 168.4 cu in) DOHC 5M-GE I6 engine.
+        1986–1986.5 – A70 Supra introduced on its own platform with 2,954 cc (2.954 L; 180.3 cu in) DOHC 7M-GE I6 engine.
+        1987 – Option of turbocharger available for the 2,954 cc (2.954 L; 180.3 cu in) DOHC 7M-GTE engine having a power output of 172 kW (231 hp; 234 PS) 245 lb⋅ft (332 N⋅m).
+        1989 – Redesign implemented. Turbo model's power output increased to 173 kW (232 hp; 235 PS) & 250 lb⋅ft (339 N⋅m).
+        1993 – A80 Supra introduced with 2,997 cc (2.997 L; 182.9 cu in) Turbo (2JZ-GTE) or naturally aspirated (2JZ-GE) DOHC engine.
+        1996 – Turbo model only available with automatic transmission owing to OBD2 certification requirements. Targa roof standard on all turbo models.
+        1997 – Manual transmission available on all turbo models. Restyled front bumper and grey (instead of black) taillight surrounds. Restyled headlights, now black on the inside with chrome rings (all chrome previously) and a clearer lens. All 1997 models labeled as 15th Anniversary model. New grey dash panels to replace the previous black. Japanese production stopped in September.
+        1998 – Slight restyling of interior. 3-spoke steering wheel introduced. Slightly updated seat design (headrest is no longer separate) VVT-i on non-turbo models which increased power. Turbo variants discontinued in the US that require California emissions.
+        1999 – Export of Supra ended in the US, production continued in Japan.
+        2002 – Production of A80 Supra ended in Japan.
+        2019 – Fifth generation Supra introduced at the January 2019 North American International Auto Show.
+        Sales
+        Model	Calendar year	North America
+        (estimated figures)[64]	UK
+        A40/A50
+        Mk I
+        
+        [65]
+        
+        1979	26,207	0[66]
+        1980	21,542	0[66]
+        1981	16,146	0[66]
+        Total	63,895	0
+        A60
+        Mk II
+        
+        [67]
+        
+        [68]
+        
+        1982	34,048	293[66]
+        1983	26,972	1,012[66]
+        1984	29,871	1,385[66]
+        1985	23,568	1,442[66]
+        Total	114,459	4,132
+        A70
+        Mk III
+        
+        [69]
+        
+        [70]
+        
+        1986	33,283	1,294[66]
+        1987	29,907	1,809[66]
+        1988	19,596	2,056[66]
+        1989	14,544	2,993[66]
+        1990	6,419	2,285[66]
+        1991	3,623	711[66]
+        1992	1,193	403[66]
+        Total	108,565	11,551
+        A80
+        Mk IV
+        
+        [71]
+        
+        1993	2,901	192[66]
+        1994	3,405	212[66]
+        1995	2,266	150[66]
+        1996	852	69[66]
+        1997	1,379	0[66]
+        1998	1,232	0[66]
+        1999	24	0[66]
+        Total	12,059	623
+        Model	Calendar year	US[72]	Canada[72]	Europe[72]	Japan[73][74]
+        J29/DB
+        Mk V
+        
+        2019	2,884	252	893	880
+        2020	5,887	394	947	2,650
+        2021	6,830	410	979[75]	
+        2022	4,952	215	830[76]	690
+        2023	2,652	N/A	939[77]	1,490
+        References
+         Toyota Celica Parts Catalogue 1977–1981. Toyota.
+         Karr, Anthony (25 March 2019). "First 2020 Toyota Supra Rolls Off Magna Steyr Assembly Lines". Motor1. US. Retrieved 26 March 2019.
+         "Toyota Traditions". Toyota Global Site. Archived from the original on 20 January 2018. Retrieved 30 December 2020.
+         Mills, Matthew (15 January 2019). "2020 Toyota Supra price, specs and release date". carwow. UK. Retrieved 22 March 2019.
+         "FAQ: What is the history of the Toyota Supra?". toyota.com. Archived from the original on 13 February 2021. Retrieved 22 December 2006.
+         "Vehicles : Supra" (Press release). US: Toyota. Archived from the original on 30 November 2007. Retrieved 28 April 2013.
+         "Toyota Supra And BMW Z4 Could Be Built Together By Magna Steyr". Motor1. 20 March 2018. Retrieved 5 October 2018.
+         "75 Years of Toyota | General Status of Plants in Japan | Tahara Plant". 2012. Retrieved 21 July 2019.
+         "Toyota Celica XX". 75 years of Toyota. Toyota Motor Corporation. Retrieved 9 June 2024.
+         自動車ガイドブック [Japanese Motor Vehicles Guide Book 1978/1979] (in Japanese), vol. 25, Japan: Japan Automobile Manufacturers Association, 10 October 1978, pp. 119–120, 0053-780025-3400
+         "Technical Development Electronics Parts". Toyota Motor Corporation. 2012. Retrieved 14 January 2015.
+         "The History of Toyota's M Engines". eds.au.com. Retrieved 22 December 2006.
+         Toyota Celica parts catalog USA & Canada (revised final), RA4#, MA4#. Toyota. June 1985. 49212R81.
+         "MK I Celica Supra History". celicasupra.com. Archived from the original on 7 December 2006. Retrieved 22 December 2006.
+         "1981 Toyota Celica Supra Road Test Data & Specifications". Supra vs. Supra. Motor Trend. February 1982. p. 46. Archived from the original (JPG) on 19 December 2002. Retrieved 22 December 2006.
+         "History of the Toyota Supra". UK: Toyota. 15 September 2018. Retrieved 15 September 2018.
+         Toyotoa (1982). Toyota Celica Supra (A60) Brochure (1982).
+         "1982 Toyota Celica Specifications" (PDF). Toyota Celica Supra. Car and Driver. October 1981. p. 42. Archived from the original (PDF) on 26 April 2012. Retrieved 22 December 2006.
+         "Car and Driver test results". Having it All. Car and Driver. May 1985. p. 74. Archived from the original (JPG) on 19 December 2002. Retrieved 22 December 2006.
+         "TOYOTA announces new Celica XX with high performance twin cam, 24-valve engine". Toyota Motor Corp. 17 August 1982.
+         "TOYOTA introduces new Celica modified for higher performance". Toyota Motor Corp. 17 August 1983.
+         自動車ガイドブック [Japanese Motor Vehicles Guide Book 1981-82] (in Japanese), vol. 28, Japan: Japan Automobile Manufacturers Association, 30 October 1981, p. 130, 053-810028-3400
+         "FSM" (PDF). Toyota A70 Supra: Factory Service Manual. 1990. Retrieved 11 January 2008.
+         "1988 Toyota Turbo specifications". carfolio. 3 March 2013. Retrieved 15 June 2018.
+         "75 Years of Toyota | General Status of Plants in Japan | Motomachi Plant". 2012. Retrieved 21 July 2019.
+         "75 Years of Toyota | Toyota Supra (A80)". 2012. Retrieved 20 November 2020.
+         "Toyota Supra Turbo: Leaner and Meaner – Tech Data" (JPG). Motor Trend (March): 57. 1993. Retrieved 27 April 2013.
+         "75 Years of Toyota | General Status of Plants in Japan | Affiliates (Toyota wholly-owned subsidiaries)-Toyota Motor East Japan, Inc". 2012. Retrieved 21 July 2019.
+         "Toyota Launches All-New Supra". Toyota. 24 May 1993. Retrieved 21 July 2019.
+         "Naomi III". OHNO Car Craft. Retrieved 27 April 2013.
+         "UK Spec Supras in New Zealand". mkiv.supras.org.nz. 20 November 2020.
+         "Toyota Supra catalog". www.goo-net-exchange.com. 20 November 2020.
+         "Toyota Supra A80 : A80 Specifications". Mkiv.supras.org.nz. 7 August 2009. Retrieved 11 October 2010.
+         "Toyota's 4th Generation Supra History". Toyota Parts Blog. Olathe, US: Toyota. Retrieved 20 November 2018.
+         "The 300 Horsepower Club". Road & Track. 26 March 2003. Retrieved 27 April 2013.
+         "A brief history of the Toyota Supra". Automotive News. 21 January 2014. Retrieved 11 March 2019.
+         "Toyota Supra Turbo: Think of it as a Lexus for Smokey Yunick" (JPG). Car and Driver (March): 41. 1993. Retrieved 27 April 2013.
+         "Car and Driver's Comprehensive Car Testing Explained". 21 August 2020.
+         Golon, Daniel (15 May 2019). "Here's How Our 2020 Toyota Supra Test Numbers Compare to the 1993 Supra Turbo's". Car and Driver. Retrieved 18 May 2020.
+         "1993 Supra Turbo". Road & Track (March). 1993. Retrieved 27 April 2013.
+         "Toyota 2000GT". Car & Driver (March). 1997. Retrieved 27 April 2013.
+         "History of the TRD 3000GT". UK: Toyota. 26 November 2019. Retrieved 13 August 2020.
+         "Toyota Premieres New Supra at Detroit Auto Show" (Press release). Japan: Toyota. 14 January 2019. Retrieved 16 January 2019.
+         "【スクープ！：ジュネーブショー2018】トヨタの出展情報をキャッチ 目玉はGRスープラとカローラスポーツ！（2月9日更新） - Webモーターマガジン". web.motormagazine.co.jp. Retrieved 14 February 2020.
+         Davis, Brett (10 August 2017). "2018 'J29' Toyota Supra getting 20i, 30i, 40i BMW engines, auto only (video)". PerformanceDrive. Retrieved 14 February 2020.
+         "SPECIFICATIONS トヨタ スープラ 主要諸元表" (PDF). toyota.jp.
+         "Toyota Supra to be built alongside BMW Z4 at Austrian plant". Motor Authority. 19 September 2018. Retrieved 30 October 2019.
+         Dahiya, Ravi (8 January 2023). "2023 Toyota Supra GR Sport". ARDwheels. Archived from the original on 7 January 2023. Retrieved 8 January 2023.
+         "All's Well That End Well?". BRMC. UK. Archived from the original on 28 September 2007.
+         "Le Mans 24 Hours 1995 (Photo Archive)". Racing Sports Cars. 18 June 1995. Retrieved 11 August 2011.
+         Ceppos, Rich (21 November 2019). "2020 Toyota Supra: Car and Driver's 10Best". Car and Driver. Retrieved 3 May 2022.
+         Sutton, Mike (18 November 2020). "2021 Toyota Supra: Car and Driver 10Best". Car and Driver. Retrieved 3 May 2022.
+         "2023 Toyota GR Supra: Car and Driver 10Best". Car and Driver. 19 December 2022. Retrieved 2 February 2023.
+         "2020 Editors' Choice: The Best New Cars, Trucks, SUVs, and Minivans". Car and Driver. 30 July 2020. Retrieved 2 February 2023.
+         "2021 Editors' Choice: The Best New Cars, Trucks, SUVs, and Minivans". Car and Driver. 16 August 2021. Retrieved 2 February 2023.
+         "2022 Editors' Choice: The Best New Cars, Trucks, SUVs, and Minivans". Car and Driver. 1 February 2022. Retrieved 2 February 2023.
+         "Drivers' Choice Awards". MotorWeek. 31 May 2020. Archived from the original on 31 May 2020. Retrieved 22 May 2023.
+         "Drivers' Choice Awards". MotorWeek. 10 February 2021. Archived from the original on 10 February 2021. Retrieved 22 May 2023.
+         "Das Goldene Lenkrad 2019: Die Preisverleihung im Live-Stream!". autobild.de (in German). 12 November 2019. Retrieved 12 May 2022.
+         "The Toyota GR Supra Is Esquire's Car of the Year". Esquire. 3 December 2019. Retrieved 2 February 2023.
+         Best Handling Car 2020 | Handling-Test in L´Anneau du Rhin | sport auto *ENGLISCH SUBS*, 11 May 2020, retrieved 3 May 2022
+         "2020 Toyota GR Supra Test Drive: 2020 Automobile All-Stars Winner". MotorTrend. 11 March 2020. Retrieved 12 May 2022.
+         "Toyota GR Supra, Tacoma Win 2021 SEMA Awards". Toyota USA Newsroom. 2 November 2021. Retrieved 3 May 2022.
+         "Toyota Supra US car sales figures". carsalesbase.com. 11 February 2016. Retrieved 27 February 2019.
+         "1979–1981 Toyota Supra". TopSpeed.com. 21 May 2014. Retrieved 11 March 2019.
+         "Toyota UK Year Book by model 1965-2019" (PDF) (Press release). UK: Toyota. 2020. Archived from the original (PDF) on 7 May 2021. Retrieved 17 March 2020.
+         Fitzgerald, Craig. "Celica Supra". www.hemmings.com. Retrieved 24 February 2019.
+         "1982–1986 Toyota supra". TopSpeed.com. 23 May 2014. Retrieved 11 March 2019.
+         "Toyota Supra". Musclecarclub.com. Archived from the original on 11 July 2012. Retrieved 7 November 2012.
+         "1986–1992 Toyota Supra". TopSpeed.com. 9 June 2014. Retrieved 11 March 2019.
+         "1993–1998 Toyota Supra". TopSpeed.com. 19 May 2014. Retrieved 11 March 2019.
+         "Toyota Supra Sales Figures". www.goodcarbadcar.net. Retrieved 15 January 2024.
+         "トヨタ「スープラ」復活デビューから2年 販売は成功しているか?". 自動車情報誌「ベストカー」 (in Japanese). 24 May 2021. Retrieved 20 April 2024.
+         "トヨタ GRスープラ 新車販売台数の推移/売れ行き(生産台数)と生産状況は？工場とラインの稼働状況も - 株式会社アイディーインフォメーション" [Toyota GR Supra New car sales trends/sales (production volume) and production status? Factory and line operating status]. id-information.co.jp (in Japanese). Retrieved 20 April 2024.
+         "Toyota sales increase +8% in 2021, record 6.4% market share". Toyota sales increase +8% in 2021, record 6.4% market share (Press release). Europe: Toyota. 13 January 2022. Retrieved 20 April 2024.
+         "Toyota Europe's market share increases to a record 7.3%". Toyota Europe’s market share increases to a record 7.3% (Press release). Europe: Toyota. 16 January 2023. Retrieved 20 April 2024.
+         "Toyota Motor Europe posts all-time sales record in 2023". Toyota Motor Europe posts all-time sales record in 2023 (Press release). Europe: Toyota. 23 January 2024. Retrieved 20 April 2024.
+        External links
+        
+        Wikimedia Commons has media related to Toyota Supra.
+        Official website
+        vte
+        Toyota
+        vte
+        Toyota road car timeline, North American market, 1958–1979 — next »
+        vte
+        « previous — Toyota road car timeline, North American market, 1980–2009 (model years) — next »
+        vte
+        « previous — Toyota road car timeline, North American market, 2010–present (model years)
+        Categories: Toyota vehiclesCars introduced in 19781980s cars1990s cars2000s cars2010s cars2020s carsSports carsHatchbacksCoupésRear-wheel-drive vehicles
+        This page was last edited on 10 January 2025, at 11:08 (UTC).
+        Text is available under the Creative Commons Attribution-ShareAlike 4.0 License; additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.</p>
+        <img src="data:image/jpeg;base64,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">
+
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jqSxt1sd-_c?si=7uWKbzGDQaMPHWCE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
