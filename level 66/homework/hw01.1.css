@@ -1,0 +1,32 @@
+.container {
+    width: 500px;
+    height: 400px;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+.img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.paragraph {
+    
+    text-decoration: underline dotted purple;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white; 
+}
+
+.button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

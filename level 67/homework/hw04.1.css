@@ -1,0 +1,20 @@
+.div {
+    width: 500px;
+    height: 400px;
+    background-color: blue;
+    display: flex; 
+    justify-content: space-around;
+    align-items: center; 
+}
+
+.div1 {
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+}
+
+.div2 {
+    width: 150px;
+    height: 150px;
+    background-color: orange;
+}
