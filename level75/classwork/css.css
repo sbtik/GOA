@@ -1,0 +1,14 @@
+
+.container{
+    border: 3px solid black;
+width: 500px;
+height: 500px;
+}
+.magar{
+    display: grid;
+border: 3px solid black;
+grid-template-rows: 150px 150 px 150px 150px 150px 150px 150px;
+grid-template-columns: 150px 150px 150px 150px 150px;
+width: 10;
+height: 10;
+}

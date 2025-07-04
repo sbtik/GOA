@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Retro Slots</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Press Start 2P', cursive;
+      background-color: #00278a;
+      color: #fff;
+      text-align: center;
+      background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
+      margin: 0;
+      padding: 2rem;
+    }
+
+    .game {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    img.bg {
+      position: absolute;
+      z-index: 1;
+      left: 28.5%;
+      height: 385px;
+      opacity: 0.7;
+      border-radius: 30px;
+      box-shadow: 0 0 20px 5px rgba(255, 223, 0, 0.9); 
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      color: #63b3ff;
+      text-shadow: 2px 2px #000;
+      box-shadow: #ffd905;
+    }
+
+    .slots-container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      width: 700px;
+      gap: 0px 30px;
+      margin: 2rem auto;
+      position: absolute;
+      z-index: 5;
+      right: 550px;
+      top: 11.5%;
+    }
+
+    .slot {
+      width: 100px;
+      height: 100px;
+      background-color: #26055242;
+      color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .slot img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+    }
+
+    .controls {
+      margin-top: 5rem;
+      z-index: 10;
+      position: absolute;
+      top: 450px;
+    }
+
+    input[type="number"] {
+      font-family: 'Press Start 2P', cursive;
+      width: 100px;
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      border: none;
+      border-radius: 6px;
+      text-align: center;
+    }
+
+    button {
+      font-family: 'Press Start 2P', cursive;
+      margin-left: 1rem;
+      padding: 0.75rem 1rem;
+      border: none;
+      border-radius: 8px;
+      background-color: #1E90FF;
+      color: white;
+      font-size: 0.75rem;
+      cursor: pointer;
+      box-shadow: 0 0 8px #1E90FF;
+    }
+
+    button:hover {
+      background-color: #63b3ff;
+      box-shadow: 0 0 16px #63b3ff;
+    }
+
+    #result {
+      margin-top: 2rem;
+      font-size: 1rem;
+    }
+
+    #coins {
+      font-size: 1rem;
+      color: #63b3ff;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+    .spin-button {
+  font-family: 'Arial Black', sans-serif;
+  background: linear-gradient(to bottom, #FFD700, #DAA520); 
+    border: 2px solid #B8860B;
+    border-radius: 6px;
+    box-shadow: 2px 2px 5px rgba(255, 215, 0, 0.8); 
+    color: #000;
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 1.2;
+    cursor: pointer;
+    text-align: center;
+    width: 100px;
+    height: 80px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .spin-button:hover {
+    background: linear-gradient(to bottom, #FFEC8B, #FFD700); 
+    box-shadow: 0 0 20px 5px rgba(255, 223, 0, 0.9); 
+    color: #000;
+  }
+  </style>
+</head>
+<body>
+  <h1>SLOTS MACHINE</h1>
+  <div id="coins">COINS: 10000</div>
+  <img class="bg" src="slotmachin.png" alt="">
+
+  <div class="game">
+    <div class="slots-container">
+      <div id="slot1" class="slot"></div>
+      <div id="slot2" class="slot"></div>
+      <div id="slot3" class="slot"></div>
+      <div id="slot4" class="slot"></div>
+      <div id="slot5" class="slot"></div>
+      <div id="slot6" class="slot"></div>
+      <div id="slot7" class="slot"></div>
+      <div id="slot8" class="slot"></div>
+      <div id="slot9" class="slot"></div>
+      <div id="slot10" class="slot"></div>
+      <div id="slot11" class="slot"></div>
+      <div id="slot12" class="slot"></div>
+      <div id="slot13" class="slot"></div>
+      <div id="slot14" class="slot"></div>
+      <div id="slot15" class="slot"></div>
+    </div>
+
+    <div class="controls">
+      <input type="number" id="bet-amount" min="1" placeholder="Enter bet" />
+      <button class="spin-button" onclick="spinSlots()">SPIN</button>
+      <div id="result"></div>
+    </div>
+
+    
+  </div>
+
+  
+
+  <script>
+    const symbols = [
+      { name: 'slot 9', img: 'slot 9.png' },
+      { name: 'slot 10', img: 'slot 10.png' },
+      { name: 'slot a', img: 'slot a.png' },
+      { name: 'slot fish', img: 'slot fish.png' },
+      { name: 'slot in and yan', img: 'slot in and yan.png' },
+      { name: 'slot j', img: 'slot j.png' },
+      { name: 'slot k', img: 'slot k.png' },
+      { name: 'slot king', img: 'slot king.png' },
+      { name: 'slot lamp', img: 'slot lamp.png' },
+      { name: 'slot ornage', img: 'slot ornage.png' },
+      { name: 'slot q', img: 'slot q.png' }
+    ];
+
+    let coins = 10000;
+
+    function updateCoinsDisplay() {
+      document.getElementById('coins').textContent = `COINS: ${coins}`;
+    }
+
+    function renderSlot(id, symbol) {
+      const slot = document.getElementById(id);
+      slot.innerHTML = '';
+      const img = document.createElement('img');
+      img.src = symbol.img;
+      img.alt = symbol.name;
+      slot.appendChild(img);
+    }
+
+    function checkWin(symbols, bet) {
+      const result = document.getElementById('result');
+      const s1 = symbols[0].name;
+      const s2 = symbols[1].name;
+      const s3 = symbols[2].name;
+
+      if (s1 === s2 && s2 === s3) {
+        const multiplier = 10;
+        const winnings = bet * multiplier;
+        coins += winnings;
+        result.textContent = `YOU WIN ${winnings} COINS! ✨`;
+      } else {
+        result.textContent = "You lost. Try again!";
+      }
+
+      updateCoinsDisplay();
+    }
+
+    function spinSlots() {
+      const bet = parseInt(document.getElementById('bet-amount').value);
+      const result = document.getElementById('result');
+
+      if (isNaN(bet) || bet <= 0) {
+        result.textContent = "Enter a valid bet amount!";
+        return;
+      }
+
+      if (coins < bet) {
+        result.textContent = "Not enough coins!";
+        return;
+      }
+
+      coins -= bet;
+      updateCoinsDisplay();
+      result.textContent = "";
+
+      const finalSymbols = [];
+      const slotIds = Array.from({ length: 15 }, (_, i) => `slot${i + 1}`);
+
+      slotIds.forEach((id, index) => {
+        let spins = 10 + Math.floor(Math.random() * 10);
+        let count = 0;
+
+        const spinInterval = setInterval(() => {
+          const symbol = symbols[Math.floor(Math.random() * symbols.length)];
+          renderSlot(id, symbol);
+          count++;
+
+          if (count >= spins) {
+            clearInterval(spinInterval);
+            finalSymbols[index] = symbol;
+
+            if (finalSymbols.filter(Boolean).length === 15) {
+              checkWin(finalSymbols, bet);
+            }
+          }
+        }, 80);
+      });
+    }
+
+    updateCoinsDisplay();
+  </script>
+</body>
+</html>
+
