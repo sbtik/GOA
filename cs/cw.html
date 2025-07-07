@@ -114,7 +114,6 @@
       transition: transform 0.2s ease;
       transform: translateY(0);
       image-rendering: pixelated;
-      background-color: #03184e;
     }
 
     .game-card:hover img {
@@ -139,12 +138,13 @@
       <a href="#">HOME</a>
       <a href="about.html">ABOUT</a>
       <a href="help.html">HELP</a>
+      <a href="leaderboard.html">LEADERBOARD</a>
     </nav>
   </header>
 
   <main>
     <div class="slot-machine" onclick="pullLever()">
-      <img src="/lvl78/ce/Adobe Express - file.png" alt="Slot Machine" />
+      <img src="Adobe Express - file.png" alt="Slot Machine" />
     </div>
 
     <h1 id="result-text">WELCOME TO CASINO DEMO</h1>
@@ -153,13 +153,13 @@
 
     <div class="game-grid">
       <div class="game-card">
-        <a href="blackjack.png"><img src="blackjack.png" alt="Poker" /></a>
+        <a href="blackjack.html"><img src="poker.png" alt="Poker" /></a>
       </div>
       <div class="game-card">
         <a href="dogi.html"><img src="dogi.png" alt="Horse Racing" /></a>
       </div>
       <div class="game-card">
-        <a href="roullette.html"><img src="roullette.png" alt="Roulette" /></a>
+        <a href="milsaware-javascript-roulette-fb91751/index.html"><img src="roullette.png" alt="Roulette" /></a>
       </div>
       <div class="game-card">
         <a href="slot.html"><img src="slot.png" alt="Slots" /></a>
@@ -184,6 +184,29 @@
         document.getElementById('win-sound').play();
       }, 1000);
     }
+
+    (function() {
+  const userId = localStorage.getItem('currentUserId');
+  if (!userId) {
+    window.location.href = 'login.html';
+    return;
+  }
+
+  const userDataRaw = localStorage.getItem(userId);
+  if (!userDataRaw) {
+    localStorage.removeItem('currentUserId');
+    window.location.href = 'login.html';
+    return;
+  }
+
+  window.currentUser = JSON.parse(userDataRaw);
+
+  if (window.currentUser.coins <= 0) {
+    alert("You have 0 coins and cannot play this game.");
+    // Here you can disable play buttons or redirect user
+  }
+})();
+
   </script>
 </body>
 </html>
