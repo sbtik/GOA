@@ -1,0 +1,11 @@
+.perent{
+display: grid;
+grid-template-columns: repeat(auto fit,minmax(200px,fr));
+gap: 10px;
+padding: 20px;
+background-color: black;
+}
+.div{
+    background-color: blue;
+    padding: 40px;
+}
